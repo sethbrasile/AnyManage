@@ -60,6 +60,13 @@ Plans:
 
 **Dependencies:** Phase 1 (needs file structure to reference)
 
+**Plans:** 3 plans
+
+Plans:
+- [ ] 02-01-PLAN.md - Create INSTRUCTIONS.md canonical agent instructions
+- [ ] 02-02-PLAN.md - Create STATE.md and docs/protocols/ documentation
+- [ ] 02-03-PLAN.md - Create agent-specific wrappers (.claude/, .opencode/, .agent/, .cursorrules)
+
 **Requirements:**
 | ID | Requirement |
 |----|-------------|
@@ -340,4 +347,4 @@ Each phase produces a demonstrable capability suitable for video segments:
 ---
 
 *Roadmap created: 2026-01-24*
-*Last updated: 2026-01-24 - Phase 1 Complete*
+*Last updated: 2026-01-24 - Phase 2 Planned (3 plans)*
