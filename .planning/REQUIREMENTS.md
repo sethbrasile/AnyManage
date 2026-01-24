@@ -9,12 +9,12 @@ Requirements for initial release. Each maps to roadmap phases.
 
 ### Core System
 
-- [ ] **CORE-01**: Structured folder hierarchy with semantic naming (entities/, templates/, ops/, .planning/)
-- [ ] **CORE-02**: Markdown-based files for all data storage (human-readable, AI-parseable)
-- [ ] **CORE-03**: Template system with reusable document templates
-- [ ] **CORE-04**: Entity profile + roadmap as core two documents per entity
-- [ ] **CORE-05**: Checkbox task tracking with `[ ]` / `[-]` / `[x]` status
-- [ ] **CORE-06**: Master roadmap dashboard showing all entities
+- [x] **CORE-01**: Structured folder hierarchy with semantic naming (entities/, templates/, ops/, .planning/)
+- [x] **CORE-02**: Markdown-based files for all data storage (human-readable, AI-parseable)
+- [x] **CORE-03**: Template system with reusable document templates
+- [x] **CORE-04**: Entity profile + roadmap as core two documents per entity
+- [x] **CORE-05**: Checkbox task tracking with `[ ]` / `[-]` / `[x]` status
+- [x] **CORE-06**: Master roadmap dashboard showing all entities
 - [ ] **CORE-07**: Agent-agnostic instruction pattern (INSTRUCTIONS.md as source of truth)
 - [ ] **CORE-08**: Thin agent-specific wrappers (.claude/, .opencode/, .cursorrules)
 
@@ -29,8 +29,8 @@ Requirements for initial release. Each maps to roadmap phases.
 
 ### Entity Management
 
-- [ ] **ENTY-01**: Configurable entity type (user defines: clients, projects, products, etc.)
-- [ ] **ENTY-02**: Standard subfolder structure per entity (notes/, planning/, tracking/, etc.)
+- [x] **ENTY-01**: Configurable entity type (user defines: clients, projects, products, etc.)
+- [x] **ENTY-02**: Standard subfolder structure per entity (notes/, planning/, tracking/, etc.)
 - [ ] **ENTY-03**: Incremental profile building ("Add [fact] to [entity] profile")
 - [ ] **ENTY-04**: Note processing workflow (unstructured notes -> structured tasks/updates)
 - [ ] **ENTY-05**: Entity onboarding workflow (create folder, templates, update master roadmap)
@@ -120,12 +120,12 @@ Which phases cover which requirements.
 
 | Requirement | Phase | Status |
 |-------------|-------|--------|
-| CORE-01 | Phase 1 | Pending |
-| CORE-02 | Phase 1 | Pending |
-| CORE-03 | Phase 1 | Pending |
-| CORE-04 | Phase 1 | Pending |
-| CORE-05 | Phase 1 | Pending |
-| CORE-06 | Phase 1 | Pending |
+| CORE-01 | Phase 1 | Complete |
+| CORE-02 | Phase 1 | Complete |
+| CORE-03 | Phase 1 | Complete |
+| CORE-04 | Phase 1 | Complete |
+| CORE-05 | Phase 1 | Complete |
+| CORE-06 | Phase 1 | Complete |
 | CORE-07 | Phase 2 | Pending |
 | CORE-08 | Phase 2 | Pending |
 | INTF-01 | Phase 2 | Pending |
@@ -134,8 +134,8 @@ Which phases cover which requirements.
 | INTF-04 | Phase 5 | Pending |
 | INTF-05 | Phase 3 | Pending |
 | INTF-06 | Phase 2 | Pending |
-| ENTY-01 | Phase 1 | Pending |
-| ENTY-02 | Phase 1 | Pending |
+| ENTY-01 | Phase 1 | Complete |
+| ENTY-02 | Phase 1 | Complete |
 | ENTY-03 | Phase 3 | Pending |
 | ENTY-04 | Phase 3 | Pending |
 | ENTY-05 | Phase 3 | Pending |
@@ -172,4 +172,4 @@ Which phases cover which requirements.
 
 ---
 *Requirements defined: 2026-01-24*
-*Last updated: 2026-01-24 - Traceability updated with phase mappings*
+*Last updated: 2026-01-24 - Phase 1 requirements marked Complete*

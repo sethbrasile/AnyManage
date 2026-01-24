@@ -8,6 +8,8 @@ A generalized template that enables non-technical project managers to use local 
 
 Non-technical PMs can operate a powerful AI project management system without understanding git, command line, or code — they just talk to it and it handles the rest.
 
+**Broader positioning:** Not just for project managers. This system is suitable for ANYONE who needs to manage anything or even just take notes on a regular basis and remember things. The "entity" concept is fully configurable — manage clients, projects, products, notes, ideas, research topics, or anything else you track over time.
+
 ## Requirements
 
 ### Validated
