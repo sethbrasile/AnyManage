@@ -82,7 +82,7 @@ Create INSTRUCTIONS.md and agent-specific wrappers so that Claude Code, opencode
 <deferred>
 ## Deferred Ideas
 
-None — discussion stayed within phase scope
+- **Cross-agent delta tool** — A utility that compares agent configurations (CLAUDE.md vs AGENTS.md, skills directories, etc.) to highlight functional differences between agents. Catches accidental divergence where one agent becomes more capable due to incremental tweaks. Could be a skill or standalone tool.
 
 </deferred>
 
