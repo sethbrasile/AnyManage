@@ -1,0 +1,7 @@
+# Templates
+
+Reusable document templates for entity profiles, roadmaps, and other standardized documents.
+
+Copy these templates when creating new entities or documents.
+
+This file ensures the folder exists in git even when empty.

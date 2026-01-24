@@ -1,0 +1,7 @@
+# Entities
+
+Where all managed entities live (clients, projects, products - whatever entity type you configure).
+
+Each entity gets its own subfolder with standardized documents and subfolders.
+
+This file ensures the folder exists in git even when empty.
