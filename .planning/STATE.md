@@ -20,16 +20,16 @@
 
 ## Current Position
 
-**Phase:** 1 of 8 (Core File Structure)
-**Plan:** 2 of 2 in phase (COMPLETE)
-**Status:** Phase 1 Complete
-**Last activity:** 2026-01-24 - Completed 01-02-PLAN.md
+**Phase:** 2 of 8 (Agent Instruction Layer)
+**Plan:** 1 of 3 in phase
+**Status:** In progress
+**Last activity:** 2026-01-24 - Completed 02-01-PLAN.md
 
 ### Progress
 
 ```
 Phase 1: Core File Structure     [x] Complete (Plans 01-01, 01-02 done)
-Phase 2: Agent Instruction Layer [ ] Pending
+Phase 2: Agent Instruction Layer [-] In Progress (Plan 02-01 done, 02-02, 02-03 pending)
 Phase 3: Entity Management       [ ] Pending
 Phase 4: Skill System Foundation [ ] Pending
 Phase 5: Specialist Pattern      [ ] Pending
@@ -67,8 +67,8 @@ Overall: [#_______] 1/8 phases complete
 |--------|-------|
 | Phases Complete | 1/8 |
 | Requirements Complete | 8/42 |
-| Plans Created | 2 |
-| Plans Executed | 2 |
+| Plans Created | 5 |
+| Plans Executed | 3 |
 
 ---
 
@@ -97,6 +97,9 @@ Overall: [#_______] 1/8 phases complete
 | Priority sections in ROADMAP.md | High/Medium/Low for at-a-glance status | 2026-01-24 |
 | [Placeholder Text] format | Visual, self-documenting placeholders users replace | 2026-01-24 |
 | Templates standalone | No external dependencies; copy and fill in | 2026-01-24 |
+| Session protocol: silent start | No greeting or status summary - just ready to work | 2026-01-24 |
+| Hybrid command patterns | Natural language and slash commands both work equally | 2026-01-24 |
+| Core behavior + pointers | ~90 lines in INSTRUCTIONS.md with details in docs/protocols/ | 2026-01-24 |
 
 ### Discovered During Research
 
@@ -168,4 +171,4 @@ None currently.
 ---
 
 *State initialized: 2026-01-24*
-*Last updated: 2026-01-24 13:49 - Completed 01-02-PLAN.md (Phase 1 Complete)*
+*Last updated: 2026-01-24 14:55 - Completed 02-01-PLAN.md*
