@@ -77,6 +77,37 @@ Skills are reusable workflows that encode best practices. Users don't need to kn
 
 Skills are stored in `.github/skills/` (cross-platform) and `.claude/skills/` (agent-specific).
 
+## Specialists
+
+Specialists are domain expert AI personas that produce structured deliverables. Unlike skills (which are procedures), specialists have expertise and judgment for complex work.
+
+**Discovery:** User asks "What specialists do you have?" or `/specialists` -> Show available experts.
+
+**Invocation:** Natural language and explicit naming both work:
+- "Run an assessment for Acme" (natural language)
+- "Use assessment-specialist for Acme" (explicit)
+- "Develop strategy for Beta Corp" (natural language)
+
+**Batch operations:** "Run assessment for all clients" works as one request.
+
+**Available Specialists:**
+- assessment-specialist - Conducts audits, gap analyses, current state evaluations
+- strategy-specialist - Develops strategic plans, roadmaps, forward-looking recommendations
+
+**Knowledge Layers:** Specialists access layered knowledge:
+1. Base PM (INSTRUCTIONS.md, protocols)
+2. Domain (docs/domain/ playbooks)
+3. Agency (ops/ preferences and processes)
+4. Entity (entities/[Entity]/knowledge/ learned context)
+
+**Deliverables:** Specialists save work to `entities/[Entity]/deliverables/` with date-suffix naming (e.g., AUDIT_FINDINGS_2026-01-25.md).
+
+**Sensitivity:** Internal content (INTERNAL_*.md, internal/ folders, <!-- INTERNAL --> markers) is never included in client-facing deliverables.
+
+Specialists are stored in `.claude/agents/` (project) and `~/.claude/agents/` (personal).
+
+See `docs/protocols/specialist-coordination.md` for detailed protocol.
+
 ## Code Style
 
 - **Plain English** for all user-facing text (no jargon, no technical terms)
