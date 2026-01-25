@@ -21,9 +21,9 @@
 ## Current Position
 
 **Phase:** 6 of 8 (Voice Training System)
-**Plan:** 1 of 3 in phase
+**Plan:** 2 of 3 in phase
 **Status:** In progress
-**Last activity:** 2026-01-25 - Completed 06-01-PLAN.md (Voice Training Infrastructure)
+**Last activity:** 2026-01-25 - Completed 06-02-PLAN.md (Voice Extraction Protocol)
 
 ### Progress
 
@@ -33,7 +33,7 @@ Phase 2: Agent Instruction Layer [x] Complete (Plans 02-01, 02-02, 02-03 done)
 Phase 3: Entity Management       [x] Complete (Plans 03-01, 03-02, 03-03 done)
 Phase 4: Skill System Foundation [x] Complete (Plans 04-01, 04-02, 04-03 done)
 Phase 5: Specialist Pattern      [x] Complete (Plans 05-01, 05-02, 05-03 done)
-Phase 6: Voice Training System   [-] In progress (Plan 06-01 done)
+Phase 6: Voice Training System   [-] In progress (Plans 06-01, 06-02 done)
 Phase 7: Documentation/Onboard   [ ] Pending
 Phase 8: Integration Patterns    [ ] Pending
 
@@ -91,11 +91,11 @@ Overall: [#####-__] 5/8 phases complete, 1 in progress
 4. Correction learning improves accuracy over time
 5. Graceful degradation for capability-limited environments
 
-**Status:** IN PROGRESS - Plan 06-01 (voice training infrastructure) COMPLETE
+**Status:** IN PROGRESS - Plans 06-01 (voice training infrastructure) and 06-02 (voice extraction protocol) COMPLETE
 
 **Plans:**
 - 06-01: Voice Training Infrastructure - COMPLETE (storage, templates, INSTRUCTIONS.md)
-- 06-02: Voice Extraction Protocol - Pending (training workflow implementation)
+- 06-02: Voice Extraction Protocol - COMPLETE (training workflow, capability assessment, handoff prompt)
 - 06-03: Voice Application Protocol - Pending (content generation with voice)
 
 ---
