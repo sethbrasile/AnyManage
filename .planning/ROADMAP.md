@@ -178,9 +178,9 @@ Plans:
 **Plans:** 3 plans
 
 Plans:
-- [ ] 05-01-PLAN.md - Specialist infrastructure and assessment specialist
-- [ ] 05-02-PLAN.md - Strategy specialist and INSTRUCTIONS.md integration
-- [ ] 05-03-PLAN.md - Specialist coordination protocol and entity onboarding update
+- [x] 05-01-PLAN.md - Specialist infrastructure and assessment specialist
+- [x] 05-02-PLAN.md - Strategy specialist and INSTRUCTIONS.md integration
+- [x] 05-03-PLAN.md - Specialist coordination protocol and entity onboarding update
 
 **Requirements:**
 | ID | Requirement |
@@ -211,6 +211,13 @@ Plans:
 **Goal:** Users can train the system to write in their personal voice and tone.
 
 **Dependencies:** Phase 5 (voice applies to specialist outputs)
+
+**Plans:** 3 plans
+
+Plans:
+- [x] 06-01-PLAN.md - Voice training infrastructure (storage directories, templates, INSTRUCTIONS.md)
+- [x] 06-02-PLAN.md - Voice extraction protocol (capability assessment, sample collection, extraction)
+- [x] 06-03-PLAN.md - Voice application and correction learning (modifiers, auto-activation, learning from edits)
 
 **Requirements:**
 | ID | Requirement |
@@ -314,7 +321,7 @@ Plans:
 | 3 | Entity Management Workflows | Complete | ENTY-03, ENTY-04, ENTY-05, ENTY-06, INTF-05 |
 | 4 | Skill System Foundation | Complete | INTF-03, KNOW-01, KNOW-05, KNOW-06 |
 | 5 | Specialist Pattern | Complete | INTF-04, KNOW-02, KNOW-03, KNOW-04 |
-| 6 | Voice Training System | Pending | VOIC-01, VOIC-02, VOIC-03, VOIC-04, VOIC-05, VOIC-06 |
+| 6 | Voice Training System | Complete | VOIC-01, VOIC-02, VOIC-03, VOIC-04, VOIC-05, VOIC-06 |
 | 7 | Documentation and Onboarding | Pending | DOCS-01, DOCS-02, DOCS-03, DOCS-04, DOCS-05, DOCS-06, DOCS-07, INTG-01 |
 | 8 | Integration Patterns | Pending | INTG-02, INTG-03, INTG-04, INTG-05 |
 
@@ -369,4 +376,4 @@ Each phase produces a demonstrable capability suitable for video segments:
 ---
 
 *Roadmap created: 2026-01-24*
-*Last updated: 2026-01-25 - Phase 5 complete (3 plans executed, specialists infrastructure + coordination protocol)*
+*Last updated: 2026-01-25 - Phase 6 complete (3 plans executed, voice training + application + correction learning)*

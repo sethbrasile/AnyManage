@@ -15,17 +15,17 @@ Requirements for initial release. Each maps to roadmap phases.
 - [x] **CORE-04**: Entity profile + roadmap as core two documents per entity
 - [x] **CORE-05**: Checkbox task tracking with `[ ]` / `[-]` / `[x]` status
 - [x] **CORE-06**: Master roadmap dashboard showing all entities
-- [ ] **CORE-07**: Agent-agnostic instruction pattern (INSTRUCTIONS.md as source of truth)
-- [ ] **CORE-08**: Thin agent-specific wrappers (.claude/, .opencode/, .cursorrules)
+- [x] **CORE-07**: Agent-agnostic instruction pattern (INSTRUCTIONS.md as source of truth)
+- [x] **CORE-08**: Thin agent-specific wrappers (.claude/, .opencode/, .cursorrules)
 
 ### Agent Interface
 
-- [ ] **INTF-01**: Natural language + structured command hybrid interface
-- [ ] **INTF-02**: Session protocol for auto-context loading on startup
+- [x] **INTF-01**: Natural language + structured command hybrid interface
+- [x] **INTF-02**: Session protocol for auto-context loading on startup
 - [x] **INTF-03**: Skill system for reusable workflow definitions
-- [ ] **INTF-04**: Specialist pattern for domain expert personas
+- [x] **INTF-04**: Specialist pattern for domain expert personas
 - [x] **INTF-05**: Invisible git management (agent commits silently, user never sees git)
-- [ ] **INTF-06**: Context restoration across sessions
+- [x] **INTF-06**: Context restoration across sessions
 
 ### Entity Management
 
@@ -39,20 +39,20 @@ Requirements for initial release. Each maps to roadmap phases.
 ### Layered Knowledge System
 
 - [x] **KNOW-01**: PM base skills layer (project management, note processing, task tracking)
-- [ ] **KNOW-02**: Domain knowledge layer (industry-specific skills and playbooks)
-- [ ] **KNOW-03**: User/agency knowledge layer (company-specific knowledge and preferences)
-- [ ] **KNOW-04**: Entity-specific knowledge layer (client/project-specific context)
+- [x] **KNOW-02**: Domain knowledge layer (industry-specific skills and playbooks)
+- [x] **KNOW-03**: User/agency knowledge layer (company-specific knowledge and preferences)
+- [x] **KNOW-04**: Entity-specific knowledge layer (client/project-specific context)
 - [x] **KNOW-05**: Skill discovery workflow (find existing skills for domain, then create custom)
 - [x] **KNOW-06**: Skill authoring guide (how to create custom skills)
 
 ### Voice Training System
 
-- [ ] **VOIC-01**: Voice training exercise (guided input collection for tone extraction)
-- [ ] **VOIC-02**: Example types: emails, chat messages, docs/guides
-- [ ] **VOIC-03**: LLM-assisted tone/voice extraction from examples
-- [ ] **VOIC-04**: Voice profile storage (persistent tone data)
-- [ ] **VOIC-05**: Selectable voice per output type (docs vs emails vs chat)
-- [ ] **VOIC-06**: Voice-aware writing (system writes in user's voice with minimal editing)
+- [x] **VOIC-01**: Voice training exercise (guided input collection for tone extraction)
+- [x] **VOIC-02**: Example types: emails, chat messages, docs/guides
+- [x] **VOIC-03**: LLM-assisted tone/voice extraction from examples
+- [x] **VOIC-04**: Voice profile storage (persistent tone data)
+- [x] **VOIC-05**: Selectable voice per output type (docs vs emails vs chat)
+- [x] **VOIC-06**: Voice-aware writing (system writes in user's voice with minimal editing)
 
 ### Documentation & UX
 
@@ -126,14 +126,14 @@ Which phases cover which requirements.
 | CORE-04 | Phase 1 | Complete |
 | CORE-05 | Phase 1 | Complete |
 | CORE-06 | Phase 1 | Complete |
-| CORE-07 | Phase 2 | Pending |
-| CORE-08 | Phase 2 | Pending |
-| INTF-01 | Phase 2 | Pending |
-| INTF-02 | Phase 2 | Pending |
+| CORE-07 | Phase 2 | Complete |
+| CORE-08 | Phase 2 | Complete |
+| INTF-01 | Phase 2 | Complete |
+| INTF-02 | Phase 2 | Complete |
 | INTF-03 | Phase 4 | Complete |
-| INTF-04 | Phase 5 | Pending |
+| INTF-04 | Phase 5 | Complete |
 | INTF-05 | Phase 3 | Complete |
-| INTF-06 | Phase 2 | Pending |
+| INTF-06 | Phase 2 | Complete |
 | ENTY-01 | Phase 1 | Complete |
 | ENTY-02 | Phase 1 | Complete |
 | ENTY-03 | Phase 3 | Complete |
@@ -141,17 +141,17 @@ Which phases cover which requirements.
 | ENTY-05 | Phase 3 | Complete |
 | ENTY-06 | Phase 3 | Complete |
 | KNOW-01 | Phase 4 | Complete |
-| KNOW-02 | Phase 5 | Pending |
-| KNOW-03 | Phase 5 | Pending |
-| KNOW-04 | Phase 5 | Pending |
+| KNOW-02 | Phase 5 | Complete |
+| KNOW-03 | Phase 5 | Complete |
+| KNOW-04 | Phase 5 | Complete |
 | KNOW-05 | Phase 4 | Complete |
 | KNOW-06 | Phase 4 | Complete |
-| VOIC-01 | Phase 6 | Pending |
-| VOIC-02 | Phase 6 | Pending |
-| VOIC-03 | Phase 6 | Pending |
-| VOIC-04 | Phase 6 | Pending |
-| VOIC-05 | Phase 6 | Pending |
-| VOIC-06 | Phase 6 | Pending |
+| VOIC-01 | Phase 6 | Complete |
+| VOIC-02 | Phase 6 | Complete |
+| VOIC-03 | Phase 6 | Complete |
+| VOIC-04 | Phase 6 | Complete |
+| VOIC-05 | Phase 6 | Complete |
+| VOIC-06 | Phase 6 | Complete |
 | DOCS-01 | Phase 7 | Pending |
 | DOCS-02 | Phase 7 | Pending |
 | DOCS-03 | Phase 7 | Pending |
@@ -172,4 +172,4 @@ Which phases cover which requirements.
 
 ---
 *Requirements defined: 2026-01-24*
-*Last updated: 2026-01-25 - Phase 4 requirements marked Complete (INTF-03, KNOW-01, KNOW-05, KNOW-06)*
+*Last updated: 2026-01-25 - Phase 6 requirements marked Complete (VOIC-01 through VOIC-06)*
