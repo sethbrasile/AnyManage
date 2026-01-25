@@ -21,7 +21,7 @@
 project-root/
   entities/           <- Managed entities (clients, projects, etc)
   templates/          <- Document templates for entity creation
-  ops/                <- Team operations and playbooks
+  ops/                <- Team operations, playbooks, and logs (logs gitignored)
   docs/protocols/     <- Detailed operational documentation
   docs/guides/        <- User-facing guides
   CONFIG.md           <- Entity type configuration
@@ -60,7 +60,8 @@ Brief summaries - see `docs/protocols/` for full details.
 
 - **Plain English** for all user-facing text (no jargon, no technical terms)
 - **Markdown** for all documentation
-- **Git operations invisible** to user (automated and silent)
+- **Git operations invisible** to user - automated, silent, no git terminology exposed. See `docs/protocols/git-abstraction.md` for implementation.
+- **Action logging** - all agent actions logged to ops/logs/ for traceability. See `docs/protocols/action-logging.md`.
 - **Checkbox syntax:** `[ ]` todo, `[-]` in-progress, `[x]` done
 
 ## Error Handling
