@@ -1,0 +1,58 @@
+# Specialist Subagent Definitions
+
+This directory contains specialist subagent definitions (domain expert AI personas).
+
+## Purpose
+
+Specialists are AI subagents with domain expertise that produce structured deliverables. They differ from skills in fundamental ways:
+
+- **Skills** = Reusable procedures anyone can follow (process-notes, get-status, weekly-review)
+- **Specialists** = Domain expert personas with judgment and expertise (assessment-specialist, strategy-specialist)
+
+Skills run in the main conversation context. Specialists run in isolated context windows with custom system prompts.
+
+## File Format
+
+Each specialist is a `.md` file with:
+
+1. **YAML frontmatter**: Metadata (name, description, tools, model)
+2. **Markdown body**: System prompt with knowledge loading instructions
+
+Example:
+```yaml
+---
+name: assessment-specialist
+description: Domain expert for conducting assessments and audits
+tools: Read, Grep, Glob, Write
+model: sonnet
+---
+
+You are an assessment specialist...
+```
+
+## Storage Locations
+
+- **Project specialists**: `.claude/agents/` (this directory) - committed to repo
+- **Personal specialists**: `~/.claude/agents/` - user-specific, not committed
+
+## Entity Folder Structure
+
+Specialists interact with entity folders following this convention:
+
+```
+entities/[Entity]/
+  knowledge/         - Learned context from specialist work
+  deliverables/      - Specialist output files
+  internal/          - Internal-only content (pricing, margins, notes)
+```
+
+These folders are created per-entity by the entity onboarding protocol as needed.
+
+## Usage
+
+Users invoke specialists naturally:
+- "Run assessment for Acme"
+- "Use assessment-specialist for Acme"
+- "Run assessment for all clients"
+
+Specialists announce before starting, produce deliverables, and return brief summaries.

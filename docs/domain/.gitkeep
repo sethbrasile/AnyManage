@@ -1,0 +1,50 @@
+# Domain Knowledge Layer
+
+This directory contains domain-specific knowledge - industry playbooks, frameworks, and best practices.
+
+## Purpose
+
+Domain knowledge provides specialists with industry-specific expertise. When a specialist runs an assessment or develops a strategy, they load relevant domain knowledge to apply appropriate frameworks and standards.
+
+## Organization
+
+For single-domain setups:
+```
+docs/domain/
+  MARKETING_PLAYBOOK.md
+  SEO_FRAMEWORKS.md
+  ANALYTICS_CHECKLIST.md
+```
+
+For multi-domain setups, use subfolders:
+```
+docs/domain/
+  marketing/
+    PLAYBOOK.md
+    SEO_FRAMEWORKS.md
+  legal/
+    COMPLIANCE_CHECKLIST.md
+    CONTRACT_STANDARDS.md
+  healthcare/
+    HIPAA_GUIDELINES.md
+```
+
+CONFIG.md can specify the active domain for multi-domain configurations.
+
+## Usage
+
+Specialists load domain knowledge as part of their four-layer knowledge protocol:
+
+1. **Layer 1 - Base PM**: Core protocols (INSTRUCTIONS.md)
+2. **Layer 2 - Domain**: Industry playbooks (docs/domain/)
+3. **Layer 3 - Agency**: Company SOPs (ops/preferences/, ops/processes/, ops/style/)
+4. **Layer 4 - Entity**: Client/project context (entities/[Entity]/knowledge/)
+
+Domain knowledge is loaded based on relevance to the task. Specialists use progressive loading - summaries first, details as needed.
+
+## Examples
+
+- Marketing agency: SEO playbooks, content frameworks, campaign checklists
+- Legal practice: Compliance standards, contract templates, regulatory guidelines
+- Healthcare: Clinical protocols, HIPAA guidelines, treatment frameworks
+- Software development: Architecture patterns, security standards, testing protocols
