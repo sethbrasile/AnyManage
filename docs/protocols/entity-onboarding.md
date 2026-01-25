@@ -144,6 +144,12 @@ entities/[Normalized Name]/
     .gitkeep
   notes/archive/
     .gitkeep
+  knowledge/
+    .gitkeep
+  deliverables/
+    .gitkeep
+  internal/
+    .gitkeep
 ```
 
 ### Creation Steps
@@ -157,6 +163,9 @@ mkdir -p "entities/[Name]"
 ```bash
 mkdir -p "entities/[Name]/notes"
 mkdir -p "entities/[Name]/notes/archive"
+mkdir -p "entities/[Name]/knowledge"
+mkdir -p "entities/[Name]/deliverables"
+mkdir -p "entities/[Name]/internal"
 ```
 
 **Step 3: Copy and populate ENTITY_PROFILE.md**
@@ -174,6 +183,18 @@ mkdir -p "entities/[Name]/notes/archive"
 **Step 5: Create .gitkeep files**
 - Create empty `entities/[Name]/notes/.gitkeep`
 - Create empty `entities/[Name]/notes/archive/.gitkeep`
+- Create empty `entities/[Name]/knowledge/.gitkeep`
+- Create empty `entities/[Name]/deliverables/.gitkeep`
+- Create empty `entities/[Name]/internal/.gitkeep`
+
+**Folder purposes:**
+- `notes/` - Meeting notes, communications, and other entity-related notes
+- `notes/archive/` - Processed notes that have been triaged
+- `knowledge/` - Learned context captured by specialists during their work
+- `deliverables/` - Specialist work products (assessments, strategies, reports)
+- `internal/` - Internal-only content not shared with entity (pricing, margins, internal notes)
+
+The `internal/` folder and any files prefixed with `INTERNAL_` are automatically excluded from client-facing deliverables by specialists.
 
 ### Timestamp Format
 
