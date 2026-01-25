@@ -20,10 +20,10 @@
 
 ## Current Position
 
-**Phase:** 3 of 8 (Entity Management Workflows)
-**Plan:** 3 of 3 in phase (COMPLETE)
-**Status:** Phase 3 Complete
-**Last activity:** 2026-01-24 - Completed 03-03-PLAN.md (Git Abstraction & Action Logging) and 03-02-PLAN.md (Profile Building & Note Processing)
+**Phase:** 4 of 8 (Skill System Foundation)
+**Plan:** 1 of 2 in phase
+**Status:** In progress
+**Last activity:** 2026-01-24 - Completed 04-01-PLAN.md (Skill Infrastructure)
 
 ### Progress
 
@@ -31,7 +31,7 @@
 Phase 1: Core File Structure     [x] Complete (Plans 01-01, 01-02 done)
 Phase 2: Agent Instruction Layer [x] Complete (Plans 02-01, 02-02, 02-03 done)
 Phase 3: Entity Management       [x] Complete (Plans 03-01, 03-02, 03-03 done)
-Phase 4: Skill System Foundation [ ] Pending
+Phase 4: Skill System Foundation [-] In Progress (Plan 04-01 done, 04-02 pending)
 Phase 5: Specialist Pattern      [ ] Pending
 Phase 6: Voice Training System   [ ] Pending
 Phase 7: Documentation/Onboard   [ ] Pending
@@ -67,8 +67,8 @@ Overall: [###_____] 3/8 phases complete
 |--------|-------|
 | Phases Complete | 3/8 |
 | Requirements Complete | 15/42 |
-| Plans Created | 9 |
-| Plans Executed | 9 |
+| Plans Created | 10 |
+| Plans Executed | 10 |
 
 ---
 
@@ -117,6 +117,10 @@ Overall: [###_____] 3/8 phases complete
 | JSON line logging | Structured logs (one JSON object per line) for parseability and debugging | 2026-01-24 |
 | Logs gitignored | Logs stay local for debugging, not shared in repository | 2026-01-24 |
 | Specialist logging pattern | Document Phase 5 specialist logging now to establish pattern early | 2026-01-24 |
+| .github/skills/ as recommended location | Agent Skills 1.0 standard (Dec 2025) for cross-platform portability | 2026-01-24 |
+| Agent-specific directories override | .claude/skills/ or .opencode/skills/ can override .github/skills/ for that agent | 2026-01-24 |
+| Skills reference protocols, don't duplicate | Single source of truth in docs/protocols/, skills are thin wrappers | 2026-01-24 |
+| Progressive disclosure for skills | ~50 tokens/skill at startup, full skill loaded only on match | 2026-01-24 |
 
 ### Discovered During Research
 
@@ -188,4 +192,4 @@ None currently.
 ---
 
 *State initialized: 2026-01-24*
-*Last updated: 2026-01-24 - Phase 3 Complete (all 3 plans: Onboarding, Profile/Notes, Git/Logging)*
+*Last updated: 2026-01-24 - Phase 4 in progress (04-01 Skill Infrastructure complete)*
