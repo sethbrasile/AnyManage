@@ -21,9 +21,9 @@
 ## Current Position
 
 **Phase:** 5 of 8 (Specialist Pattern)
-**Plan:** 1 of 3 in phase (COMPLETE)
+**Plan:** 2 of 3 in phase (COMPLETE)
 **Status:** In progress
-**Last activity:** 2026-01-25 - Completed 05-01-PLAN.md (Specialist Infrastructure & Assessment Specialist)
+**Last activity:** 2026-01-25 - Completed 05-02-PLAN.md (Strategy Specialist & Integration)
 
 ### Progress
 
@@ -32,7 +32,7 @@ Phase 1: Core File Structure     [x] Complete (Plans 01-01, 01-02 done)
 Phase 2: Agent Instruction Layer [x] Complete (Plans 02-01, 02-02, 02-03 done)
 Phase 3: Entity Management       [x] Complete (Plans 03-01, 03-02, 03-03 done)
 Phase 4: Skill System Foundation [x] Complete (Plans 04-01, 04-02, 04-03 done)
-Phase 5: Specialist Pattern      [-] In progress (Plan 05-01 done)
+Phase 5: Specialist Pattern      [-] In progress (Plans 05-01, 05-02 done)
 Phase 6: Voice Training System   [ ] Pending
 Phase 7: Documentation/Onboard   [ ] Pending
 Phase 8: Integration Patterns    [ ] Pending
@@ -74,7 +74,7 @@ Overall: [####____] 4/8 phases complete, 1 in progress
 4. Sensitivity classification protects internal content
 5. Batch processing with progress visibility
 
-**Status:** IN PROGRESS - Plan 05-01 (specialist infrastructure and assessment specialist) COMPLETE
+**Status:** IN PROGRESS - Plans 05-01 (specialist infrastructure and assessment specialist) and 05-02 (strategy specialist and integration) COMPLETE
 
 ---
 
@@ -85,7 +85,7 @@ Overall: [####____] 4/8 phases complete, 1 in progress
 | Phases Complete | 4/8 |
 | Requirements Complete | 18/42 |
 | Plans Created | 16 |
-| Plans Executed | 13 |
+| Plans Executed | 14 |
 
 ---
 
@@ -145,6 +145,9 @@ Overall: [####____] 4/8 phases complete, 1 in progress
 | Knowledge auto-capture by specialists | Specialists append learned context to LEARNED_CONTEXT.md with timestamp and source | 2026-01-25 |
 | Batch processing announce pattern | Users see progress: announce → per-entity updates → final summary | 2026-01-25 |
 | Entity knowledge infrastructure | Entities now include knowledge/, deliverables/, internal/ folders at creation | 2026-01-25 |
+| Opus model for strategy specialist | Strategy work requires higher quality reasoning than assessment; opus vs sonnet | 2026-01-25 |
+| Prerequisite assessment check | Strategy specialist checks for existing assessment before starting, recommends assessment-first | 2026-01-25 |
+| Specialist discovery pattern | /specialists command and natural language ("What specialists do you have?") for discovery | 2026-01-25 |
 
 ### Discovered During Research
 
