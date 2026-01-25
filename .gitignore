@@ -1,0 +1,13 @@
+# Agent PM .gitignore
+
+# Agent logs (local debugging only)
+ops/logs/*.log
+ops/logs/*.log.*
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor files
+*.swp
+*~

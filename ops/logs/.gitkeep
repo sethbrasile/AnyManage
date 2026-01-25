@@ -1,0 +1,9 @@
+# Log files directory
+# This folder contains agent action logs for debugging and traceability.
+# Files here are gitignored - they stay local, not shared in the repository.
+#
+# Expected files:
+# - agent-actions.log: All agent workflow actions
+# - git-errors.log: Git operation failures
+#
+# See docs/protocols/action-logging.md for log format documentation.
