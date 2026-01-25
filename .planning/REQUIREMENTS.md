@@ -22,7 +22,7 @@ Requirements for initial release. Each maps to roadmap phases.
 
 - [ ] **INTF-01**: Natural language + structured command hybrid interface
 - [ ] **INTF-02**: Session protocol for auto-context loading on startup
-- [ ] **INTF-03**: Skill system for reusable workflow definitions
+- [x] **INTF-03**: Skill system for reusable workflow definitions
 - [ ] **INTF-04**: Specialist pattern for domain expert personas
 - [x] **INTF-05**: Invisible git management (agent commits silently, user never sees git)
 - [ ] **INTF-06**: Context restoration across sessions
@@ -38,12 +38,12 @@ Requirements for initial release. Each maps to roadmap phases.
 
 ### Layered Knowledge System
 
-- [ ] **KNOW-01**: PM base skills layer (project management, note processing, task tracking)
+- [x] **KNOW-01**: PM base skills layer (project management, note processing, task tracking)
 - [ ] **KNOW-02**: Domain knowledge layer (industry-specific skills and playbooks)
 - [ ] **KNOW-03**: User/agency knowledge layer (company-specific knowledge and preferences)
 - [ ] **KNOW-04**: Entity-specific knowledge layer (client/project-specific context)
-- [ ] **KNOW-05**: Skill discovery workflow (find existing skills for domain, then create custom)
-- [ ] **KNOW-06**: Skill authoring guide (how to create custom skills)
+- [x] **KNOW-05**: Skill discovery workflow (find existing skills for domain, then create custom)
+- [x] **KNOW-06**: Skill authoring guide (how to create custom skills)
 
 ### Voice Training System
 
@@ -130,7 +130,7 @@ Which phases cover which requirements.
 | CORE-08 | Phase 2 | Pending |
 | INTF-01 | Phase 2 | Pending |
 | INTF-02 | Phase 2 | Pending |
-| INTF-03 | Phase 4 | Pending |
+| INTF-03 | Phase 4 | Complete |
 | INTF-04 | Phase 5 | Pending |
 | INTF-05 | Phase 3 | Complete |
 | INTF-06 | Phase 2 | Pending |
@@ -140,12 +140,12 @@ Which phases cover which requirements.
 | ENTY-04 | Phase 3 | Complete |
 | ENTY-05 | Phase 3 | Complete |
 | ENTY-06 | Phase 3 | Complete |
-| KNOW-01 | Phase 4 | Pending |
+| KNOW-01 | Phase 4 | Complete |
 | KNOW-02 | Phase 5 | Pending |
 | KNOW-03 | Phase 5 | Pending |
 | KNOW-04 | Phase 5 | Pending |
-| KNOW-05 | Phase 4 | Pending |
-| KNOW-06 | Phase 4 | Pending |
+| KNOW-05 | Phase 4 | Complete |
+| KNOW-06 | Phase 4 | Complete |
 | VOIC-01 | Phase 6 | Pending |
 | VOIC-02 | Phase 6 | Pending |
 | VOIC-03 | Phase 6 | Pending |
@@ -172,4 +172,4 @@ Which phases cover which requirements.
 
 ---
 *Requirements defined: 2026-01-24*
-*Last updated: 2026-01-24 - Phase 3 requirements marked Complete (ENTY-03, ENTY-04, ENTY-05, ENTY-06, INTF-05)*
+*Last updated: 2026-01-25 - Phase 4 requirements marked Complete (INTF-03, KNOW-01, KNOW-05, KNOW-06)*
