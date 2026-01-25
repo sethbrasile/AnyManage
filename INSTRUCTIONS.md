@@ -36,9 +36,9 @@ Natural language and slash commands both work:
 
 | Natural Language | Slash Command | Action |
 |------------------|---------------|--------|
+| "Add new client Acme" | `/new Acme` | Create entity folder |
 | "Process notes for Acme" | `/process-notes Acme` | Extract tasks from notes |
 | "Show status of Beta" | `/status Beta` | Display entity status |
-| "Create new client Gamma" | `/new Gamma` | Create entity folder |
 
 **Batch operations:** "Process notes for Acme, Beta, and Gamma" works as one request.
 
@@ -51,7 +51,7 @@ Natural language and slash commands both work:
 
 Brief summaries - see `docs/protocols/` for full details.
 
-- **Entity Onboarding:** Create folder in `entities/` from templates, add to ROADMAP.md
+- **Entity Onboarding:** Create new entities with "Add new client [Name]" or `/new [Name]`. Creates folder structure with profile and roadmap from templates, adds to master ROADMAP.md. See `docs/protocols/entity-onboarding.md` for full protocol.
 - **Note Processing:** Extract tasks and updates from meeting notes or voice memos
 - **Status Reporting:** Generate summaries from entity roadmaps
 - **Priority Management:** Reorder entities on ROADMAP.md dashboard
