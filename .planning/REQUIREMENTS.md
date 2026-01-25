@@ -24,17 +24,17 @@ Requirements for initial release. Each maps to roadmap phases.
 - [ ] **INTF-02**: Session protocol for auto-context loading on startup
 - [ ] **INTF-03**: Skill system for reusable workflow definitions
 - [ ] **INTF-04**: Specialist pattern for domain expert personas
-- [ ] **INTF-05**: Invisible git management (agent commits silently, user never sees git)
+- [x] **INTF-05**: Invisible git management (agent commits silently, user never sees git)
 - [ ] **INTF-06**: Context restoration across sessions
 
 ### Entity Management
 
 - [x] **ENTY-01**: Configurable entity type (user defines: clients, projects, products, etc.)
 - [x] **ENTY-02**: Standard subfolder structure per entity (notes/, planning/, tracking/, etc.)
-- [ ] **ENTY-03**: Incremental profile building ("Add [fact] to [entity] profile")
-- [ ] **ENTY-04**: Note processing workflow (unstructured notes -> structured tasks/updates)
-- [ ] **ENTY-05**: Entity onboarding workflow (create folder, templates, update master roadmap)
-- [ ] **ENTY-06**: Subagent/specialist logging for traceability
+- [x] **ENTY-03**: Incremental profile building ("Add [fact] to [entity] profile")
+- [x] **ENTY-04**: Note processing workflow (unstructured notes -> structured tasks/updates)
+- [x] **ENTY-05**: Entity onboarding workflow (create folder, templates, update master roadmap)
+- [x] **ENTY-06**: Subagent/specialist logging for traceability
 
 ### Layered Knowledge System
 
@@ -132,14 +132,14 @@ Which phases cover which requirements.
 | INTF-02 | Phase 2 | Pending |
 | INTF-03 | Phase 4 | Pending |
 | INTF-04 | Phase 5 | Pending |
-| INTF-05 | Phase 3 | Pending |
+| INTF-05 | Phase 3 | Complete |
 | INTF-06 | Phase 2 | Pending |
 | ENTY-01 | Phase 1 | Complete |
 | ENTY-02 | Phase 1 | Complete |
-| ENTY-03 | Phase 3 | Pending |
-| ENTY-04 | Phase 3 | Pending |
-| ENTY-05 | Phase 3 | Pending |
-| ENTY-06 | Phase 3 | Pending |
+| ENTY-03 | Phase 3 | Complete |
+| ENTY-04 | Phase 3 | Complete |
+| ENTY-05 | Phase 3 | Complete |
+| ENTY-06 | Phase 3 | Complete |
 | KNOW-01 | Phase 4 | Pending |
 | KNOW-02 | Phase 5 | Pending |
 | KNOW-03 | Phase 5 | Pending |
@@ -172,4 +172,4 @@ Which phases cover which requirements.
 
 ---
 *Requirements defined: 2026-01-24*
-*Last updated: 2026-01-24 - Phase 1 requirements marked Complete*
+*Last updated: 2026-01-24 - Phase 3 requirements marked Complete (ENTY-03, ENTY-04, ENTY-05, ENTY-06, INTF-05)*
