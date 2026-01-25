@@ -294,6 +294,13 @@ Plans:
 
 **Dependencies:** Phase 7 (integrations are enhancements to working system)
 
+**Plans:** 3 plans
+
+Plans:
+- [ ] 08-01-PLAN.md - Integration Guide and Documentation (INTEGRATION_GUIDE.md, INTEGRATIONS.md)
+- [ ] 08-02-PLAN.md - Integration Skill Framework (template, add-integration skill, protocol)
+- [ ] 08-03-PLAN.md - Trello Integration (trello-sync skill, TASK_SYNC_PLAYBOOK.md, INSTRUCTIONS.md update)
+
 **Requirements:**
 | ID | Requirement |
 |----|-------------|
@@ -311,10 +318,12 @@ Plans:
 
 **Deliverables:**
 - `/docs/INTEGRATION_GUIDE.md`
+- `/INTEGRATIONS.md`
 - `/ops/TASK_SYNC_PLAYBOOK.md`
-- Trello integration skill
-- Integration skill template
-- MCP configuration examples
+- Trello integration skill (`.github/skills/trello-sync/`)
+- Integration skill template (`/templates/INTEGRATION_TEMPLATE.md`)
+- Add-integration skill (`.github/skills/add-integration/`)
+- Integration framework protocol (`docs/protocols/integration-framework.md`)
 
 ---
 
@@ -382,4 +391,4 @@ Each phase produces a demonstrable capability suitable for video segments:
 ---
 
 *Roadmap created: 2026-01-24*
-*Last updated: 2026-01-25 - Phase 7 complete (4 plans executed, documentation + reference example + tutorials + video scripts)*
+*Last updated: 2026-01-25 - Phase 8 plans created (3 plans in 2 waves)*
