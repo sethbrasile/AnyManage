@@ -56,17 +56,17 @@ Requirements for initial release. Each maps to roadmap phases.
 
 ### Documentation & UX
 
-- [ ] **DOCS-01**: Beginner tutorial (step-by-step for non-technical users)
-- [ ] **DOCS-02**: Reference example (cleaned marketing agency with fake data)
-- [ ] **DOCS-03**: Customization guide (how to adapt for your industry)
-- [ ] **DOCS-04**: Video-ready structure (designed for YouTube walkthrough)
-- [ ] **DOCS-05**: Single entry point (README with one clear first step)
-- [ ] **DOCS-06**: Troubleshooting guide (common issues and solutions)
-- [ ] **DOCS-07**: Skill discovery documentation (how to find/install domain skills)
+- [x] **DOCS-01**: Beginner tutorial (step-by-step for non-technical users)
+- [x] **DOCS-02**: Reference example (cleaned marketing agency with fake data)
+- [x] **DOCS-03**: Customization guide (how to adapt for your industry)
+- [x] **DOCS-04**: Video-ready structure (designed for YouTube walkthrough)
+- [x] **DOCS-05**: Single entry point (README with one clear first step)
+- [x] **DOCS-06**: Troubleshooting guide (common issues and solutions)
+- [x] **DOCS-07**: Skill discovery documentation (how to find/install domain skills)
 
 ### Integrations
 
-- [ ] **INTG-01**: Standalone operation (full value without any integrations)
+- [x] **INTG-01**: Standalone operation (full value without any integrations)
 - [ ] **INTG-02**: Integration pattern documentation (how to add integrations)
 - [ ] **INTG-03**: Trello integration as example (task management sync)
 - [ ] **INTG-04**: Dual source of truth pattern (external = status, local = context)
@@ -152,14 +152,14 @@ Which phases cover which requirements.
 | VOIC-04 | Phase 6 | Complete |
 | VOIC-05 | Phase 6 | Complete |
 | VOIC-06 | Phase 6 | Complete |
-| DOCS-01 | Phase 7 | Pending |
-| DOCS-02 | Phase 7 | Pending |
-| DOCS-03 | Phase 7 | Pending |
-| DOCS-04 | Phase 7 | Pending |
-| DOCS-05 | Phase 7 | Pending |
-| DOCS-06 | Phase 7 | Pending |
-| DOCS-07 | Phase 7 | Pending |
-| INTG-01 | Phase 7 | Pending |
+| DOCS-01 | Phase 7 | Complete |
+| DOCS-02 | Phase 7 | Complete |
+| DOCS-03 | Phase 7 | Complete |
+| DOCS-04 | Phase 7 | Complete |
+| DOCS-05 | Phase 7 | Complete |
+| DOCS-06 | Phase 7 | Complete |
+| DOCS-07 | Phase 7 | Complete |
+| INTG-01 | Phase 7 | Complete |
 | INTG-02 | Phase 8 | Pending |
 | INTG-03 | Phase 8 | Pending |
 | INTG-04 | Phase 8 | Pending |
@@ -172,4 +172,4 @@ Which phases cover which requirements.
 
 ---
 *Requirements defined: 2026-01-24*
-*Last updated: 2026-01-25 - Phase 6 requirements marked Complete (VOIC-01 through VOIC-06)*
+*Last updated: 2026-01-25 - Phase 7 requirements marked Complete (DOCS-01 through DOCS-07, INTG-01)*
