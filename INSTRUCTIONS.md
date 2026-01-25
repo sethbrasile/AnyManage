@@ -108,6 +108,40 @@ Specialists are stored in `.claude/agents/` (project) and `~/.claude/agents/` (p
 
 See `docs/protocols/specialist-coordination.md` for detailed protocol.
 
+## Voice Training
+
+Users can train the system to write in their personal voice and tone.
+
+**Discovery:** User asks "Train my voice" or "/train-voice" -> Start voice training workflow. See `docs/protocols/voice-training.md`.
+
+**Content Types:** User selects which writing styles to train:
+- Emails (client communication, business correspondence)
+- Technical Documentation (READMEs, guides, docs)
+- Chat Messages (Slack, Teams, informal)
+- Reports/Proposals (formal documents)
+
+**Sample Requirements:** 5-10 writing samples per selected content type. Samples should be actual user-written content.
+
+**Storage Locations:**
+- Primary: `~/.agent-pm/voice/voice_profile.md` (portable across projects)
+- Fallback: `ops/voice/voice_profile.md` (project-specific)
+
+Agent checks primary first, falls back to project level.
+
+**Voice Application:**
+- Content-type based auto-activation (agent discretion)
+- User can always explicitly request or suppress voice
+- Single profile with tone calibration modifiers for different contexts
+
+**Learning from Corrections:**
+- In-session: User says "Here's what I changed: [paste]"
+- Async: User adds to `ops/voice/CORRECTIONS.md`
+- System learns from corrections to improve voice accuracy
+
+**Capability Assessment:** If running in terminal-only environment, agent generates a portable extraction prompt user can take to Claude Desktop or ChatGPT web to complete training there.
+
+See `templates/VOICE_TRAINING_EXERCISE.md` for the guided training workflow.
+
 ## Code Style
 
 - **Plain English** for all user-facing text (no jargon, no technical terms)
