@@ -853,15 +853,259 @@ User: Run assessment for Acme Corp
 Agent: [Specialist loads profile with note-derived facts]
 ```
 
+## Voice Integration
+
+Specialists can apply the user's voice to client-facing deliverables, ensuring consistency with the user's natural writing style.
+
+### When to Apply Voice
+
+| Deliverable Type | Client-Facing? | Apply Voice? | Modifier |
+|------------------|----------------|--------------|----------|
+| Assessment findings | Yes | Yes | professional_client |
+| Strategy plan | Yes | Yes | professional_client |
+| Client report | Yes | Yes | professional_client |
+| Proposal | Yes | Yes | professional_client |
+| Internal analysis | No | No | N/A |
+| Internal notes | No | No | N/A |
+| INTERNAL_* files | No | No | N/A |
+| Files in internal/ | No | No | N/A |
+
+**Decision logic:**
+
+```
+Is deliverable going to the client/external party?
+  YES → Apply voice with professional_client modifier
+  NO → Skip voice (internal content stays neutral)
+```
+
+### Voice Loading for Specialists
+
+Specialists load voice profile during startup, after loading entity knowledge.
+
+**Specialist startup sequence:**
+1. Load Layer 1: Base PM Knowledge (INSTRUCTIONS.md)
+2. Load Layer 2: Domain Knowledge (if relevant)
+3. Load Layer 3: Agency Knowledge (preferences, processes)
+4. Load Layer 4: Entity Knowledge (profile, knowledge/)
+5. **Load Voice Profile:** Check `~/.agent-pm/voice/voice_profile.md` → `ops/voice/voice_profile.md`
+6. Begin specialist work
+
+**Voice profile loading:**
+
+```
+Check primary location:
+  ~/.agent-pm/voice/voice_profile.md
+
+If not found, check fallback:
+  ops/voice/voice_profile.md
+
+If found and valid:
+  Load profile for voice-applied sections
+  Note: Voice available for client-facing deliverables
+
+If not found or invalid:
+  Continue without voice
+  Generate client-facing deliverables in neutral professional tone
+```
+
+**Silent failure:** If voice profile is missing or corrupted, specialist continues without voice. No error exposed to user.
+
+### Voice Application in Deliverables
+
+Different deliverable sections get different voice treatment.
+
+#### Assessment Specialist
+
+| Section | Apply Voice? | Rationale |
+|---------|--------------|-----------|
+| Executive Summary | Yes | Client reads this first - should sound like user |
+| Findings (descriptive text) | Yes | Narrative sections benefit from user's voice |
+| Findings (data/lists) | No | Factual lists stay neutral |
+| Recommendations | Yes | Actionable guidance sounds better in user's voice |
+| Technical details | No | Specs and requirements stay neutral |
+
+**Example:**
+```markdown
+## Executive Summary
+
+[Voice applied - sounds like user explaining findings]
+
+We identified five key areas where Acme Corp can improve...
+
+## Findings
+
+### Finding 1: Infrastructure Gaps
+
+[Voice applied for description]
+The current infrastructure setup has some significant gaps...
+
+**Technical Details:**
+[No voice - factual]
+- Servers: 3x AWS EC2 t3.large
+- Database: RDS PostgreSQL 13.4
+- Backup: Daily snapshots, 7-day retention
+
+### Recommendations
+
+[Voice applied]
+Here's what I'd recommend tackling first...
+```
+
+#### Strategy Specialist
+
+| Section | Apply Voice? | Rationale |
+|---------|--------------|-----------|
+| Executive Summary | Yes | Client reads this first |
+| Strategic Vision | Yes | Vision benefits from user's authentic voice |
+| Goals & Objectives | Partial | Goal statements: No. Explanations: Yes. |
+| Action Plans | Yes | Recommendations sound better in user's voice |
+| Timeline/Milestones | No | Dates and deliverables stay neutral |
+| Success Metrics | No | KPIs stay factual |
+
+**Example:**
+```markdown
+## Executive Summary
+
+[Voice applied]
+Based on the assessment, here's the strategic plan for Acme Corp...
+
+## Strategic Vision
+
+[Voice applied]
+Over the next 12 months, we'll focus on three core areas...
+
+## Goals & Objectives
+
+### Goal 1: Improve Infrastructure Reliability
+
+[Goal statement - no voice]
+**Target:** Achieve 99.9% uptime by Q3 2026
+
+[Explanation - voice applied]
+This matters because downtime is currently costing Acme about $15k/month...
+
+## Timeline
+
+[No voice - factual]
+- Q1 2026: Phase 1 implementation
+- Q2 2026: Phase 2 rollout
+- Q3 2026: Phase 3 optimization
+```
+
+### Modifier Selection for Specialists
+
+Specialists use specific modifiers for voice application.
+
+**Default modifier: `professional_client`**
+
+All client-facing deliverables default to `professional_client` modifier unless:
+1. Entity knowledge indicates different relationship (warm/family_client)
+2. Deliverable type requires different tone (rare)
+3. User explicitly requested different modifier
+
+**Relationship-based modifier override:**
+
+Check entity knowledge for relationship indicators:
+
+```
+Check entities/[Entity]/knowledge/LEARNED_CONTEXT.md:
+  If contains: "long-term client", "warm relationship", "friendly rapport"
+    → Consider family_client modifier
+
+  If contains: "formal relationship", "conservative culture", "legal context"
+    → Consider formal modifier
+
+  Default: professional_client
+```
+
+**Example:**
+```
+Entity: Acme Corp
+LEARNED_CONTEXT.md contains:
+  "10-year client relationship"
+  "Weekly casual check-ins with CEO"
+  "Very warm and friendly rapport"
+
+→ Strategy specialist uses family_client modifier for deliverable
+→ Maintains professionalism but adds warmth from voice profile
+```
+
+### Post-Generation Reminder
+
+After generating client-facing deliverable with voice, specialist offers correction learning.
+
+**Reminder pattern:**
+
+```
+[Specialist completes deliverable]
+[Saves to entities/[Entity]/deliverables/]
+
+Agent announces:
+  Completed [deliverable type] for [Entity].
+
+  View: entities/[Entity]/deliverables/[FILE].md
+
+  [If voice was applied]
+  This deliverable uses your voice profile. If anything doesn't sound like you, let me know or log it to CORRECTIONS.md for learning.
+```
+
+**Correction learning integration:**
+
+Users can provide corrections:
+1. **In-session:** "Actually, I'd phrase that section differently..."
+2. **Async:** Log to CORRECTIONS.md, process later with `/process-corrections`
+
+See: `docs/protocols/correction-learning.md`
+
+### Voice Profile Age Check
+
+Specialists check voice profile age when loading.
+
+**Age detection:**
+```
+Check file modification date of voice_profile.md
+
+If older than 6 months:
+  Log note (don't interrupt specialist)
+
+If older than 1 year:
+  After deliverable completion, suggest refresh:
+    "Your voice profile is 14 months old. Want to refresh it with recent writing samples?"
+```
+
+**Rationale:** Writing styles evolve. Old profiles may not match current voice.
+
+### Integration Protocol References
+
+Voice integration relies on these protocols:
+
+- **Voice Application:** See `docs/protocols/voice-application.md`
+  - Profile loading (primary → fallback)
+  - Modifier calibration (professional_client default)
+  - Quality verification checklist
+
+- **Correction Learning:** See `docs/protocols/correction-learning.md`
+  - In-session correction path
+  - Async CORRECTIONS.md processing
+  - Pattern extraction and profile updates
+
+- **Voice Training:** See `docs/protocols/voice-training.md`
+  - Initial profile creation
+  - Content type selection
+  - Sample collection and extraction
+
 ## Related Protocols
 
 - **Entity Onboarding:** See `docs/protocols/entity-onboarding.md`
 - **Profile Building:** See `docs/protocols/profile-building.md`
 - **Note Processing:** See `docs/protocols/note-processing.md`
 - **Session Protocol:** See `docs/protocols/session-protocol.md`
+- **Voice Application:** See `docs/protocols/voice-application.md`
+- **Correction Learning:** See `docs/protocols/correction-learning.md`
+- **Voice Training:** See `docs/protocols/voice-training.md`
 
 ---
 
 *Protocol: specialist-coordination*
-*Version: 1.0*
-*Last updated: 2026-01-25*
+*Version: 1.1*
+*Last updated: 2026-01-25 (Added Voice Integration)*
