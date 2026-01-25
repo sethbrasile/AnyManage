@@ -137,6 +137,13 @@ Plans:
 
 **Dependencies:** Phase 3 (needs entity management as base)
 
+**Plans:** 3 plans
+
+Plans:
+- [ ] 04-01-PLAN.md - Skill infrastructure (directories, discovery protocol, INSTRUCTIONS.md updates)
+- [ ] 04-02-PLAN.md - PM base skills (process-notes, get-status, weekly-review)
+- [ ] 04-03-PLAN.md - Skill authoring guide (documentation for creating custom skills)
+
 **Requirements:**
 | ID | Requirement |
 |----|-------------|
@@ -155,6 +162,7 @@ Plans:
 **Deliverables:**
 - `/.claude/skills/` directory structure
 - `/.opencode/skills/` directory structure
+- `/.github/skills/` directory structure (cross-platform)
 - Core skills: process-notes, get-status, weekly-review
 - `/docs/SKILL_AUTHORING_GUIDE.md`
 - Skill discovery protocol in instructions
