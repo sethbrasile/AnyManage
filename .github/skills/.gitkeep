@@ -1,0 +1,11 @@
+# Skill Directory - Cross-Platform (Recommended)
+
+This directory contains skills that work across all agents:
+- Claude Code
+- GitHub Copilot
+- opencode
+- Other Agent Skills 1.0 compatible tools
+
+This is the recommended location for skills per Agent Skills 1.0 standard (Dec 2025).
+
+Agent-specific directories (`.claude/skills/`, `.opencode/skills/`) can override these.

@@ -1,0 +1,7 @@
+# Skill Directory - opencode
+
+This directory contains skills specifically for opencode.
+
+For cross-platform skills, use `.github/skills/` instead.
+
+Skills in this directory override same-named skills in `.github/skills/`.

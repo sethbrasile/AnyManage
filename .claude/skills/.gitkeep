@@ -1,0 +1,7 @@
+# Skill Directory - Claude Code
+
+This directory contains skills specifically for Claude Code.
+
+For cross-platform skills, use `.github/skills/` instead.
+
+Skills in this directory override same-named skills in `.github/skills/`.
