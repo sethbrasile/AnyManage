@@ -251,6 +251,14 @@ Plans:
 
 **Dependencies:** Phases 1-6 (documents working system)
 
+**Plans:** 4 plans
+
+Plans:
+- [ ] 07-01-PLAN.md - README.md entry point and foundational guides (getting-started, customization, skill-discovery)
+- [ ] 07-02-PLAN.md - Reference example (marketing agency with 3 progressive clients)
+- [ ] 07-03-PLAN.md - Agent-specific tutorials and troubleshooting guide + skill
+- [ ] 07-04-PLAN.md - Video scripts for YouTube series (5 videos)
+
 **Requirements:**
 | ID | Requirement |
 |----|-------------|
@@ -273,12 +281,10 @@ Plans:
 
 **Deliverables:**
 - `/README.md` (single entry point)
-- `/docs/BEGINNER_TUTORIAL.md`
-- `/docs/CUSTOMIZATION_GUIDE.md`
-- `/docs/TROUBLESHOOTING.md`
-- `/docs/SKILL_DISCOVERY.md`
-- `/example/` directory with marketing agency reference
-- Video-friendly phase structure
+- `/docs/guides/` with setup tutorials, customization, troubleshooting
+- `/example/` directory with marketing agency reference (3 clients at different stages)
+- `/VIDEO_SCRIPTS/` with 5 video scripts for YouTube series
+- Troubleshooting skill for agent-assisted diagnosis
 
 ---
 
