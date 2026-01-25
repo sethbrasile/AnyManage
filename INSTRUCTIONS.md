@@ -58,6 +58,25 @@ Brief summaries - see `docs/protocols/` for full details.
 - **Status Reporting:** Generate summaries from entity roadmaps
 - **Priority Management:** Reorder entities on ROADMAP.md dashboard
 
+## Skills
+
+Skills are reusable workflows that encode best practices. Users don't need to know skill names - just describe what you want.
+
+**Discovery:** User asks "What skills do you have?" -> Show available workflows. See `docs/protocols/skill-discovery.md`.
+
+**Invocation:** Natural language and slash commands both work:
+- "Process notes for Acme" = `/process-notes Acme`
+- "Run weekly review" = `/weekly-review`
+
+**Batch operations:** "Process notes for all clients" works as one request.
+
+**PM Base Skills:**
+- process-notes - Extract tasks from meeting notes
+- get-status - Show entity status
+- weekly-review - Generate weekly status report
+
+Skills are stored in `.github/skills/` (cross-platform) and `.claude/skills/` (agent-specific).
+
 ## Code Style
 
 - **Plain English** for all user-facing text (no jargon, no technical terms)
