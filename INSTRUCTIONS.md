@@ -111,3 +111,4 @@ For complete protocols, see:
 - `docs/protocols/error-recovery.md` - Checkpoint and recovery patterns
 - `docs/protocols/agent-optimization.md` - Agent-specific optimizations
 - `docs/guides/` - User-facing how-to guides
+- `docs/SKILL_AUTHORING_GUIDE.md` - How to create custom skills
