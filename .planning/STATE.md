@@ -20,24 +20,24 @@
 
 ## Current Position
 
-**Phase:** 2 of 8 (Agent Instruction Layer)
-**Plan:** 3 of 3 in phase (COMPLETE)
-**Status:** Phase 2 Complete
-**Last activity:** 2026-01-24 - Completed all Phase 2 plans
+**Phase:** 3 of 8 (Entity Management Workflows)
+**Plan:** 1 of 3 in phase (COMPLETE)
+**Status:** Phase 3 Execution In Progress
+**Last activity:** 2026-01-24 - Completed 03-01-PLAN.md (Entity Onboarding Protocol)
 
 ### Progress
 
 ```
 Phase 1: Core File Structure     [x] Complete (Plans 01-01, 01-02 done)
 Phase 2: Agent Instruction Layer [x] Complete (Plans 02-01, 02-02, 02-03 done)
-Phase 3: Entity Management       [ ] Pending
+Phase 3: Entity Management       [-] In Progress (Plan 03-01 done)
 Phase 4: Skill System Foundation [ ] Pending
 Phase 5: Specialist Pattern      [ ] Pending
 Phase 6: Voice Training System   [ ] Pending
 Phase 7: Documentation/Onboard   [ ] Pending
 Phase 8: Integration Patterns    [ ] Pending
 
-Overall: [##______] 2/8 phases complete
+Overall: [##-_____] 2/8 phases complete, 1 in progress
 ```
 
 ---
@@ -67,8 +67,8 @@ Overall: [##______] 2/8 phases complete
 |--------|-------|
 | Phases Complete | 2/8 |
 | Requirements Complete | 13/42 |
-| Plans Created | 5 |
-| Plans Executed | 5 |
+| Plans Created | 6 |
+| Plans Executed | 6 |
 
 ---
 
@@ -100,6 +100,11 @@ Overall: [##______] 2/8 phases complete
 | Session protocol: silent start | No greeting or status summary - just ready to work | 2026-01-24 |
 | Hybrid command patterns | Natural language and slash commands both work equally | 2026-01-24 |
 | Core behavior + pointers | ~90 lines in INSTRUCTIONS.md with details in docs/protocols/ | 2026-01-24 |
+| Entity name normalization | Title case for consistency (ACME CORP → Acme Corp); preserve hyphens, apostrophes, acronyms | 2026-01-24 |
+| Duplicate detection before creation | Exact and fuzzy (>80% similarity) matching to prevent duplicate entities | 2026-01-24 |
+| Minimal entity creation | Create folder structure immediately, enhance afterward; no upfront questions | 2026-01-24 |
+| Next-step suggestions | After creation, proactively suggest what user can do next | 2026-01-24 |
+| Protocol documentation format | Trigger detection → normalization → core logic → error handling → examples → integration | 2026-01-24 |
 
 ### Discovered During Research
 
@@ -114,7 +119,7 @@ Overall: [##______] 2/8 phases complete
 - [x] Create Phase 1 detailed plan (01-01-PLAN.md created and executed)
 - [x] Validate folder structure against reference implementation (entities/, templates/, ops/)
 - [x] Define template placeholder conventions - [Placeholder Text] format established in 01-02
-- [ ] Establish entity naming conventions
+- [x] Establish entity naming conventions - Title case normalization in 03-01
 
 ### Blockers
 
@@ -171,4 +176,4 @@ None currently.
 ---
 
 *State initialized: 2026-01-24*
-*Last updated: 2026-01-24 - Phase 2 Complete*
+*Last updated: 2026-01-24 - Phase 3 Plan 01 Complete*
