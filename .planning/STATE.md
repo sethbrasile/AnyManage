@@ -21,9 +21,9 @@
 ## Current Position
 
 **Phase:** 6 of 8 (Voice Training System)
-**Plan:** 2 of 3 in phase
-**Status:** In progress
-**Last activity:** 2026-01-25 - Completed 06-02-PLAN.md (Voice Extraction Protocol)
+**Plan:** 3 of 3 in phase
+**Status:** Phase complete
+**Last activity:** 2026-01-25 - Completed 06-03-PLAN.md (Voice Application & Integration)
 
 ### Progress
 
@@ -33,11 +33,11 @@ Phase 2: Agent Instruction Layer [x] Complete (Plans 02-01, 02-02, 02-03 done)
 Phase 3: Entity Management       [x] Complete (Plans 03-01, 03-02, 03-03 done)
 Phase 4: Skill System Foundation [x] Complete (Plans 04-01, 04-02, 04-03 done)
 Phase 5: Specialist Pattern      [x] Complete (Plans 05-01, 05-02, 05-03 done)
-Phase 6: Voice Training System   [-] In progress (Plans 06-01, 06-02 done)
+Phase 6: Voice Training System   [x] Complete (Plans 06-01, 06-02, 06-03 done)
 Phase 7: Documentation/Onboard   [ ] Pending
 Phase 8: Integration Patterns    [ ] Pending
 
-Overall: [#####-__] 5/8 phases complete, 1 in progress
+Overall: [######__] 6/8 phases complete
 ```
 
 ---
@@ -91,12 +91,12 @@ Overall: [#####-__] 5/8 phases complete, 1 in progress
 4. Correction learning improves accuracy over time
 5. Graceful degradation for capability-limited environments
 
-**Status:** IN PROGRESS - Plans 06-01 (voice training infrastructure) and 06-02 (voice extraction protocol) COMPLETE
+**Status:** COMPLETE - Plans 06-01 (voice training infrastructure), 06-02 (voice extraction protocol), and 06-03 (voice application and integration) COMPLETE
 
 **Plans:**
 - 06-01: Voice Training Infrastructure - COMPLETE (storage, templates, INSTRUCTIONS.md)
 - 06-02: Voice Extraction Protocol - COMPLETE (training workflow, capability assessment, handoff prompt)
-- 06-03: Voice Application Protocol - Pending (content generation with voice)
+- 06-03: Voice Application & Integration - COMPLETE (voice application protocol, correction learning protocol, specialist integration)
 
 ---
 
@@ -104,10 +104,10 @@ Overall: [#####-__] 5/8 phases complete, 1 in progress
 
 | Metric | Value |
 |--------|-------|
-| Phases Complete | 5/8 |
-| Requirements Complete | 18/42 |
+| Phases Complete | 6/8 |
+| Requirements Complete | 21/42 |
 | Plans Created | 19 |
-| Plans Executed | 15 |
+| Plans Executed | 18 |
 
 ---
 
@@ -175,6 +175,14 @@ Overall: [#####-__] 5/8 phases complete, 1 in progress
 | Content-type based voice training | Different contexts need different patterns; single profile with contextual awareness | 2026-01-25 |
 | CORRECTIONS.md for async learning | Users can log corrections without session interruption; continuous improvement | 2026-01-25 |
 | Voice profile structure from reference | Proven production structure (Core DNA, patterns, anti-patterns, checklist) | 2026-01-25 |
+| Five tone calibration modifiers | professional_client, business_partner, formal, casual, family_client cover business contexts | 2026-01-25 |
+| Auto-activation based on content type | Voice "just works" for trained types without user needing to request it | 2026-01-25 |
+| Reminder frequency: first 3, then every 5th | Balance between gathering feedback and not being annoying with correction offers | 2026-01-25 |
+| Dual correction paths (in-session + async) | Support different workflows: immediate conversational or batched CORRECTIONS.md | 2026-01-25 |
+| 2+ examples for pattern confidence | Prevent overfitting to single correction; ensure patterns are systematic | 2026-01-25 |
+| Profile age check (6mo/1yr thresholds) | Writing styles evolve; prompt refresh at 6 months, encourage at 1 year | 2026-01-25 |
+| Specialist default to professional_client | Client-facing deliverables need professional tone by default | 2026-01-25 |
+| Section-level voice application | Narrative sections get voice, data/lists stay neutral for natural deliverables | 2026-01-25 |
 
 ### Discovered During Research
 
@@ -246,4 +254,4 @@ None currently.
 ---
 
 *State initialized: 2026-01-24*
-*Last updated: 2026-01-25 - Phase 5 complete (Specialist Pattern)*
+*Last updated: 2026-01-25 - Phase 6 complete (Voice Training System)*
