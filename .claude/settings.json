@@ -1,0 +1,13 @@
+{
+  "projectName": "Agent PM",
+  "description": "AI-powered project management for non-technical PMs. See INSTRUCTIONS.md for agent behavior.",
+  "allowedTools": [
+    "Read",
+    "Write",
+    "Edit",
+    "Bash",
+    "Glob",
+    "Grep"
+  ],
+  "mcpServers": {}
+}

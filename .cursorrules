@@ -1,0 +1,24 @@
+# Cursor Instructions for Agent PM
+
+This project uses INSTRUCTIONS.md as the canonical source of truth.
+Read /INSTRUCTIONS.md for complete agent behavior.
+
+## Quick Reference
+
+- **Target user:** Non-technical project manager
+- **Commands:** Natural language or slash command format
+- **Git operations:** Automated and invisible
+- **Documentation:** Plain English, no jargon
+
+## Cursor-Specific
+
+- Project Rules in `.cursor/rules/` (if created) extend these instructions
+- For detailed protocols, see `docs/protocols/`
+
+## Reference
+
+See INSTRUCTIONS.md for:
+- Session startup protocol
+- Command patterns
+- File structure
+- Error handling
