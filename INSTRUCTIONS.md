@@ -10,11 +10,22 @@
 
 ## Session Protocol
 
-1. **Load STATE.md** (if exists) - current work context
-2. **Check PAUSE.md** (if exists) - offer to resume if found
-3. **Check integrations** (if INTEGRATIONS.md exists) - quick health check, report status
-4. **Silent ready** - no greeting, no status summary, just await instructions
-5. **Load more context as needed** - don't preload everything upfront
+1. **Check first-run** - if `entities/` is empty and user says "help me set up" or similar, run first-run setup
+2. **Load STATE.md** (if exists) - current work context
+3. **Check PAUSE.md** (if exists) - offer to resume if found
+4. **Check integrations** (if INTEGRATIONS.md exists) - quick health check, report status
+5. **Silent ready** - no greeting, no status summary, just await instructions
+6. **Load more context as needed** - don't preload everything upfront
+
+### First-Run Setup
+
+When user says "help me set up", "set up", "configure", "get started" (or similar) and no entities exist yet:
+
+1. **Ask entity type:** "What are you managing? (clients, projects, products, patients, or something else?)"
+2. **Update CONFIG.md:** Set `entity_type` and `entity_type_plural` in frontmatter based on response
+3. **Confirm:** "Got it — you're managing [type]. Ready to add your first [type]?"
+
+This ensures the system is configured for the user's specific use case before they start adding items.
 
 ### Integration Status (if configured)
 

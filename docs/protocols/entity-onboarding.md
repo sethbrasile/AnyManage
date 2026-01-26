@@ -19,13 +19,19 @@ The agent should recognize these patterns as entity creation requests:
 
 ### Natural Language Patterns
 
+The agent should recognize the configured entity type from CONFIG.md. If `entity_type` is "client":
+
 | Pattern | Example |
 |---------|---------|
-| "Add new client [Name]" | "Add new client Acme Corp" |
-| "Create entity [Name]" | "Create entity Beta Industries" |
-| "New client [Name]" | "New client Gamma LLC" |
+| "Add new [entity_type] [Name]" | "Add new client Acme Corp" |
+| "Create [entity_type] [Name]" | "Create client Beta Industries" |
+| "New [entity_type] [Name]" | "New client Gamma LLC" |
 | "Create new [Name]" | "Create new Delta Partners" |
 | "Add [Name]" | "Add Epsilon Group" |
+
+For other entity types (project, patient, product), the same patterns apply:
+- "Add new project Alpha" (when entity_type is "project")
+- "Add new patient Smith" (when entity_type is "patient")
 
 ### Slash Command
 

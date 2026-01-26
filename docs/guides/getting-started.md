@@ -6,16 +6,30 @@ This guide explains what AnyManage is and how it works. For specific setup instr
 - [opencode setup](opencode-setup.md)
 - [codex setup](codex-setup.md)
 
+## First: What Are You Managing?
+
+AnyManage works with any type of entity. Before diving in, decide what you're tracking:
+
+| If you manage... | Set entity_type to... |
+|------------------|----------------------|
+| Client accounts | `client` |
+| Software projects | `project` |
+| Products | `product` |
+| Patients | `patient` |
+| Consulting engagements | `engagement` |
+
+The first time you run the system, type **"Help me set up"** and the AI will configure this for you. Or edit `CONFIG.md` directly — just change the `entity_type` in the frontmatter.
+
 ## What Is This?
 
-AnyManage is an AI-powered system that helps you manage clients, projects, or whatever you're tracking. You talk to it in plain English, and it handles all the file organization and technical details.
+AnyManage is an AI-powered system that helps you manage whatever you're tracking. You talk to it in plain English, and it handles all the file organization and technical details.
 
 Think of it like having an assistant who:
-- Creates folders and documents when you add a new client
+- Creates folders and documents when you add a new item
 - Extracts tasks from your meeting notes
 - Keeps track of what's done and what's pending
 - Generates reports and assessments
-- Remembers everything about every client
+- Remembers everything about every entity
 
 The "AI" part is the coding agent (Claude Code, opencode, or codex) that reads the instructions and does the work. The "PM" part is the file structure and templates that tell the AI what to do.
 
@@ -84,10 +98,17 @@ There's no greeting or status dump. It's ready when you are.
 
 Once you're set up (see agent-specific guides), try these:
 
-**Add your first client:**
+**Configure your entity type (first time only):**
 ```
-Add new client Acme Corp
+Help me set up
 ```
+The AI asks what you're managing and configures the system.
+
+**Add your first item:**
+```
+Add new [entity] Acme Corp
+```
+(Replace `[entity]` with your type — client, project, patient, etc.)
 The AI creates the folder, sets up profile and roadmap, adds them to your dashboard.
 
 **See their profile:**
@@ -106,23 +127,11 @@ Show status
 ```
 
 **Process meeting notes:**
-If you have notes, paste them or put them in the client's notes/ folder, then:
+If you have notes, paste them or put them in the entity's notes/ folder, then:
 ```
 Process notes for Acme
 ```
 The AI extracts tasks, profile facts, and follow-ups.
-
-## What's an "Entity"?
-
-Throughout the docs, you'll see "entity" instead of "client". That's because this system can manage anything:
-
-- **Clients** (default) - Marketing agencies, consultancies
-- **Projects** - Software teams, construction
-- **Products** - Product managers
-- **Patients** - Healthcare
-- **Engagements** - Consulting firms
-
-You configure what you're managing in CONFIG.md. The default is "client" but you can change it to match your industry. See the [customization guide](customization.md) for details.
 
 ## Getting Help
 

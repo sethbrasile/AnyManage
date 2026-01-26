@@ -1,6 +1,6 @@
 # AnyManage
 
-**Manage anything with AI conversation.** No technical skills required. Clients, projects, notes — whatever you track.
+**Manage anything with AI conversation.** No technical skills required. Clients, projects, patients, products — whatever you track.
 
 ## Quick Start
 
@@ -9,18 +9,18 @@
 git clone https://github.com/yourusername/anymanage.git && cd anymanage && claude
 ```
 
-Then type: `Add new client Acme Corp`
+Then type: `Help me set up`
 
-The AI creates everything and confirms it's done.
+The AI asks what you're managing (clients, projects, products, etc.) and configures everything for your use case.
 
 ---
 
 ## What You Can Do
 
-- **Add clients:** "Add new client [name]"
-- **Process notes:** "Process notes for [client]"
-- **Get status:** "Show me [client]'s status"
-- **Run assessments:** "Run assessment for [client]"
+- **Add new items:** "Add new [entity]" (e.g., "Add new client Acme" or "Add new project Alpha")
+- **Process notes:** "Process notes for [name]"
+- **Get status:** "Show me [name]'s status"
+- **Run assessments:** "Run assessment for [name]"
 - **Weekly review:** "Run weekly review"
 
 Just talk to it naturally. You don't need to memorize commands.
@@ -34,7 +34,7 @@ Just talk to it naturally. You don't need to memorize commands.
 ## How It Works
 
 AnyManage is a file structure plus AI instructions. You talk to the AI naturally, and it:
-- Creates folders for clients (or projects, patients, whatever you configure)
+- Creates folders for whatever you're managing (clients, projects, patients, products)
 - Organizes notes and documents
 - Tracks work and status
 - Generates reports and assessments
