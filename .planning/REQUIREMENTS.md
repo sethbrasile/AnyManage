@@ -67,10 +67,10 @@ Requirements for initial release. Each maps to roadmap phases.
 ### Integrations
 
 - [x] **INTG-01**: Standalone operation (full value without any integrations)
-- [ ] **INTG-02**: Integration pattern documentation (how to add integrations)
-- [ ] **INTG-03**: Trello integration as example (task management sync)
-- [ ] **INTG-04**: Dual source of truth pattern (external = status, local = context)
-- [ ] **INTG-05**: Integration skill framework (standard way to build integrations)
+- [x] **INTG-02**: Integration pattern documentation (how to add integrations)
+- [x] **INTG-03**: Trello integration as example (task management sync)
+- [x] **INTG-04**: Dual source of truth pattern (external = status, local = context)
+- [x] **INTG-05**: Integration skill framework (standard way to build integrations)
 
 ## v2 Requirements
 
