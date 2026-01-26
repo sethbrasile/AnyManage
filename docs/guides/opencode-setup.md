@@ -1,6 +1,6 @@
 # opencode Setup Tutorial
 
-This guide walks you through setting up Agent PM with opencode. No terminal experience required - we'll explain every step.
+This guide walks you through setting up AnyManage with opencode. No terminal experience required - we'll explain every step.
 
 **opencode is open source and free.** It's a great choice if you want a self-hosted or community-driven option.
 
@@ -75,18 +75,18 @@ You should see a version number. If you see "command not found," the installatio
 
 ---
 
-## Step 3: Download Agent PM
+## Step 3: Download AnyManage
 
-Now we'll download the Agent PM files. In terminal-speak, this is called "cloning a repository."
+Now we'll download the AnyManage files. In terminal-speak, this is called "cloning a repository."
 
 **Type:**
 
 ```bash
-git clone https://github.com/your-repo/agent-pm.git
+git clone https://github.com/your-repo/anymanage.git
 ```
 
 **What happens:**
-- Your computer downloads all the Agent PM files
+- Your computer downloads all the AnyManage files
 - You'll see progress messages
 - Takes 10-30 seconds
 
@@ -103,7 +103,7 @@ Move into the folder you just downloaded.
 **Type:**
 
 ```bash
-cd agent-pm
+cd anymanage
 ```
 
 **What `cd` means:** "Change directory" - like double-clicking a folder to open it.
@@ -114,7 +114,7 @@ cd agent-pm
 pwd
 ```
 
-This shows your current location. It should end with `/agent-pm`.
+This shows your current location. It should end with `/anymanage`.
 
 ---
 
@@ -175,7 +175,7 @@ You've created your first client.
 - Some advanced features may not be available
 - Response formatting might look slightly different
 
-These differences are minor. The core Agent PM functionality works the same way.
+These differences are minor. The core AnyManage functionality works the same way.
 
 ---
 
@@ -211,7 +211,7 @@ The installation didn't complete. Try:
 You need to configure your LLM API key. Check opencode's documentation for setting environment variables.
 
 **"Error: INSTRUCTIONS.md not found"**
-Make sure you're in the agent-pm folder. Type `pwd` to check, then `cd agent-pm` if needed.
+Make sure you're in the anymanage folder. Type `pwd` to check, then `cd anymanage` if needed.
 
 **Commands work but output is different**
 Different LLMs have different personalities. The core functionality should work, but phrasing may vary.
@@ -226,4 +226,4 @@ Different LLMs have different personalities. The core functionality should work,
 
 ---
 
-*Setup complete! You're ready to use Agent PM with opencode.*
+*Setup complete! You're ready to use AnyManage with opencode.*

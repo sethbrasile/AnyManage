@@ -279,7 +279,7 @@ This ensures:
 
 ## PM Base Skills
 
-The following skills are standard for Agent PM:
+The following skills are standard for AnyManage:
 
 | Skill | Description | Batch Support |
 |-------|-------------|---------------|

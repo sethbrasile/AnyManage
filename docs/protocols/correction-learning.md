@@ -490,7 +490,7 @@ I'll watch for this pattern. If I see it again, I'll add it to your voice profil
 **Scenario:** Can't save updated profile to storage
 
 **Agent behavior:**
-1. Attempt primary location write (`~/.agent-pm/voice/voice_profile.md`)
+1. Attempt primary location write (`~/.anymanage/voice/voice_profile.md`)
 2. If fails, attempt fallback location (`ops/voice/voice_profile.md`)
 3. If both fail:
    ```

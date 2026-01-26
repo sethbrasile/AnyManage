@@ -1,6 +1,6 @@
 # Claude Code Setup Tutorial
 
-This guide walks you through setting up Agent PM with Claude Code. No terminal experience required - we'll explain every step.
+This guide walks you through setting up AnyManage with Claude Code. No terminal experience required - we'll explain every step.
 
 ---
 
@@ -17,7 +17,7 @@ This guide walks you through setting up Agent PM with Claude Code. No terminal e
 
 ## Step 1: Install Claude Code
 
-First, you need Claude Code on your computer. It's the AI assistant that will run Agent PM.
+First, you need Claude Code on your computer. It's the AI assistant that will run AnyManage.
 
 **Go to:** [https://claude.ai/code](https://claude.ai/code)
 
@@ -59,24 +59,24 @@ The `~` symbol means you're in your home folder - like being in your main Docume
 
 ---
 
-## Step 3: Download Agent PM
+## Step 3: Download AnyManage
 
-Now we'll download the Agent PM files to your computer. In terminal-speak, this is called "cloning a repository."
+Now we'll download the AnyManage files to your computer. In terminal-speak, this is called "cloning a repository."
 
 **Type this command** (copy and paste is fine):
 
 ```bash
-git clone https://github.com/your-repo/agent-pm.git
+git clone https://github.com/your-repo/anymanage.git
 ```
 
 **What happens:**
-- Your computer downloads all the Agent PM files
+- Your computer downloads all the AnyManage files
 - You'll see progress messages scrolling by
 - Takes about 10-30 seconds depending on your internet
 
 **What you'll see:**
 ```
-Cloning into 'agent-pm'...
+Cloning into 'anymanage'...
 remote: Enumerating objects: 245, done.
 remote: Counting objects: 100% (245/245), done.
 Receiving objects: 100% (245/245), 85.12 KiB | 2.83 MiB/s, done.
@@ -93,7 +93,7 @@ Now we need to "go into" the folder you just downloaded. In terminal-speak, this
 **Type:**
 
 ```bash
-cd agent-pm
+cd anymanage
 ```
 
 **What `cd` means:** "Change directory" - it's like double-clicking a folder to open it.
@@ -101,7 +101,7 @@ cd agent-pm
 **How to know it worked:** Your prompt might change to show you're in the new folder:
 
 ```
-user@computer agent-pm %
+user@computer anymanage %
 ```
 
 Or you can type `pwd` (print working directory) to confirm:
@@ -110,7 +110,7 @@ Or you can type `pwd` (print working directory) to confirm:
 pwd
 ```
 
-This shows your current location. It should end with `/agent-pm`.
+This shows your current location. It should end with `/anymanage`.
 
 ---
 
@@ -210,7 +210,7 @@ Git isn't installed. Download it from [git-scm.com](https://git-scm.com).
 Claude Code isn't installed or not in your path. Go back to Step 1.
 
 **"fatal: repository not found"**
-The URL might have changed. Check the Agent PM documentation for the current clone URL.
+The URL might have changed. Check the AnyManage documentation for the current clone URL.
 
 **Claude doesn't respond**
 Press `Enter` after your command. If still stuck, press `Ctrl + C` to cancel and try again.
@@ -240,4 +240,4 @@ Now that you're running:
 
 ---
 
-*Setup complete! You're ready to use Agent PM.*
+*Setup complete! You're ready to use AnyManage.*

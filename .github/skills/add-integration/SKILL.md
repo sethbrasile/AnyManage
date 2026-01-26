@@ -87,7 +87,7 @@ Guide user through obtaining credentials step-by-step.
 Let's get your Trello credentials. I'll walk you through it.
 
 Step 1: Go to trello.com/power-ups/admin
-Step 2: Click "New" to create a Power-Up (any name works, like "Agent PM")
+Step 2: Click "New" to create a Power-Up (any name works, like "AnyManage")
 Step 3: Copy your API Key from the page
 
 Paste your API Key here:

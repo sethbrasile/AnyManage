@@ -3,7 +3,7 @@
 **Purpose:** This is a portable extraction prompt for users in terminal-only environments (SSH, basic CLI) where file upload isn't easy.
 
 **When to use this:**
-- You're running Agent PM in a terminal-only environment
+- You're running AnyManage in a terminal-only environment
 - The system can't easily process file uploads
 - You want to complete voice training in Claude Desktop or ChatGPT web
 
@@ -12,7 +12,7 @@
 2. Open Claude Desktop or ChatGPT web
 3. Paste the prompt and follow the instructions
 4. Copy the resulting voice profile
-5. Return to Agent PM and paste the profile to save it
+5. Return to AnyManage and paste the profile to save it
 
 ---
 
@@ -344,7 +344,7 @@ Once you receive your voice profile from Claude Desktop or ChatGPT web:
 
 1. **Copy the entire profile** (everything from `# [Your Name] - Voice Profile` to the end)
 
-2. **Return to Agent PM** (your terminal session)
+2. **Return to AnyManage** (your terminal session)
 
 3. **Paste the profile and say:**
    ```
@@ -353,7 +353,7 @@ Once you receive your voice profile from Claude Desktop or ChatGPT web:
    [paste the complete profile]
    ```
 
-4. **Agent PM will save it** to `~/.agent-pm/voice/voice_profile.md`
+4. **AnyManage will save it** to `~/.anymanage/voice/voice_profile.md`
 
 5. **Your voice is now active** - the system will use it automatically when writing emails, docs, chat messages, and reports
 
@@ -380,4 +380,4 @@ Once you receive your voice profile from Claude Desktop or ChatGPT web:
 
 ---
 
-*This extraction prompt is part of Agent PM's voice training system. Generated for portable use in capable AI environments when terminal-only access limits file handling.*
+*This extraction prompt is part of AnyManage's voice training system. Generated for portable use in capable AI environments when terminal-only access limits file handling.*

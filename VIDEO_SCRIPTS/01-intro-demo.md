@@ -1,6 +1,6 @@
-# Video Script: Agent PM Intro and Demo
+# Video Script: AnyManage Intro and Demo
 
-**Video title:** Agent PM: AI Project Management for Non-Technical Users
+**Video title:** AnyManage: AI Project Management for Non-Technical Users
 **Target length:** 3-4 minutes
 **Audience:** Non-technical PMs curious about AI tools
 **Tone:** Conversational, Seth's voice
@@ -25,7 +25,7 @@
 
 | VISUAL | AUDIO |
 |--------|-------|
-| SHOW: Terminal with AI prompt ready | "This is Agent PM - a system that lets you manage projects using natural language." |
+| SHOW: Terminal with AI prompt ready | "This is AnyManage - a system that lets you manage projects using natural language." |
 | SHOW: Folders appearing in sidebar (entities/Acme Corp/) | "You tell it what to do, and it handles all the technical stuff - the files, the git commits (if you don't know what those are, perfect - you don't need to)..." |
 | SHOW: Quick flash of markdown files with readable content | "...all the organization. You just work in plain English." |
 
@@ -98,7 +98,7 @@
 Paste this in YouTube description:
 
 ```
-Agent PM: AI project management that works in plain English.
+AnyManage: AI project management that works in plain English.
 
 You talk to it, it handles the files. No git knowledge needed, no coding required.
 
@@ -129,7 +129,7 @@ Coming in this series:
 ## Timestamps (add after upload)
 
 - 0:00 What if you could just talk to your computer?
-- 0:15 What is Agent PM?
+- 0:15 What is AnyManage?
 - 0:45 Demo: Adding a client
 - 1:15 Demo: Processing notes
 - 2:15 Demo: Checking status

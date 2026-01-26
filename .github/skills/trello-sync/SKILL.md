@@ -50,7 +50,7 @@ Bidirectional task synchronization with Trello boards.
 Step 1: API Key
 ```
 Go to: trello.com/power-ups/admin
-Create a new Power-Up (any name, like "Agent PM")
+Create a new Power-Up (any name, like "AnyManage")
 Copy your API Key from the page
 ```
 

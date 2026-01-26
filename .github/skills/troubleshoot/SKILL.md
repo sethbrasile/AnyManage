@@ -1,16 +1,16 @@
 ---
 name: troubleshoot
-description: Diagnose and resolve user issues with Agent PM. Use when user reports problems, errors, or unexpected behavior. Guides users through troubleshooting steps and knows when to escalate to GitHub issues.
+description: Diagnose and resolve user issues with AnyManage. Use when user reports problems, errors, or unexpected behavior. Guides users through troubleshooting steps and knows when to escalate to GitHub issues.
 license: Apache-2.0
 metadata:
-  author: agent-pm
+  author: anymanage
   version: "1.0"
   knowledge_base: docs/guides/troubleshooting.md
 ---
 
 # Troubleshoot Skill
 
-Help users diagnose and resolve issues with Agent PM.
+Help users diagnose and resolve issues with AnyManage.
 
 ## When to Use
 
@@ -50,7 +50,7 @@ This skill uses `docs/guides/troubleshooting.md` as its knowledge base. Don't du
 4. **Escalate if needed**
    - If none of the documented solutions work
    - If the issue seems like a bug
-   - Direct to: https://github.com/your-repo/agent-pm/issues
+   - Direct to: https://github.com/your-repo/anymanage/issues
 
 ## Diagnosis Patterns
 
@@ -92,7 +92,7 @@ When escalating:
 I wasn't able to resolve this with the usual fixes.
 
 This might be a bug or edge case. I'd suggest opening an issue:
-https://github.com/your-repo/agent-pm/issues
+https://github.com/your-repo/anymanage/issues
 
 Include:
 - What you were trying to do

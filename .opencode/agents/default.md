@@ -1,4 +1,4 @@
-# Agent PM - opencode Agent
+# AnyManage - opencode Agent
 
 ## Role
 

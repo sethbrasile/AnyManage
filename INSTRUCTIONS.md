@@ -1,4 +1,4 @@
-# Agent Instructions: Agent PM
+# Agent Instructions: AnyManage
 
 ## Overview
 
@@ -138,7 +138,7 @@ Users can train the system to write in their personal voice and tone.
 **Sample Requirements:** 5-10 writing samples per selected content type. Samples should be actual user-written content.
 
 **Storage Locations:**
-- Primary: `~/.agent-pm/voice/voice_profile.md` (portable across projects)
+- Primary: `~/.anymanage/voice/voice_profile.md` (portable across projects)
 - Fallback: `ops/voice/voice_profile.md` (project-specific)
 
 Agent checks primary first, falls back to project level.

@@ -8,7 +8,7 @@ Can't figure out what went wrong? You're in the right place. Find your issue bel
 
 ### "command not found: git"
 
-**What this means:** Your computer doesn't have git installed. Git is the tool that downloads the Agent PM files.
+**What this means:** Your computer doesn't have git installed. Git is the tool that downloads the AnyManage files.
 
 **How to fix:**
 1. Download git from [git-scm.com/downloads](https://git-scm.com/downloads)
@@ -16,7 +16,7 @@ Can't figure out what went wrong? You're in the right place. Find your issue bel
 3. Close and reopen your terminal
 4. Try `git --version` to confirm it works
 
-**Still stuck?** [Open an issue](https://github.com/your-repo/agent-pm/issues) describing your operating system and the error message.
+**Still stuck?** [Open an issue](https://github.com/your-repo/anymanage/issues) describing your operating system and the error message.
 
 ---
 
@@ -35,7 +35,7 @@ If it still doesn't work, the installation might have failed:
 - **opencode:** Run `npm install -g opencode` or `pip install opencode`
 - **codex:** Check [OpenAI's documentation](https://platform.openai.com/docs)
 
-**Still stuck?** [Open an issue](https://github.com/your-repo/agent-pm/issues) with the exact error message.
+**Still stuck?** [Open an issue](https://github.com/your-repo/anymanage/issues) with the exact error message.
 
 ---
 
@@ -58,24 +58,24 @@ Run Command Prompt as Administrator:
 3. Select "Run as administrator"
 4. Try the install command again
 
-**Still stuck?** [Open an issue](https://github.com/your-repo/agent-pm/issues).
+**Still stuck?** [Open an issue](https://github.com/your-repo/anymanage/issues).
 
 ---
 
 ### "Repository not found" when cloning
 
-**What this means:** The URL for Agent PM might have changed, or there's a typo.
+**What this means:** The URL for AnyManage might have changed, or there's a typo.
 
 **How to fix:**
 1. Double-check the clone URL for typos
 2. Make sure you copied the full URL
-3. Check the Agent PM documentation for the current URL
+3. Check the AnyManage documentation for the current URL
 
 If the URL is correct but still fails:
 - The repository might be private (you need access)
 - Your internet connection might be blocking it
 
-**Still stuck?** [Open an issue](https://github.com/your-repo/agent-pm/issues).
+**Still stuck?** [Open an issue](https://github.com/your-repo/anymanage/issues).
 
 ---
 
@@ -86,7 +86,7 @@ If the URL is correct but still fails:
 **What this means:** The agent started but didn't read the instructions file that tells it how to work.
 
 **How to fix:**
-1. Make sure you're in the agent-pm folder: `pwd` should end with `/agent-pm`
+1. Make sure you're in the anymanage folder: `pwd` should end with `/anymanage`
 2. Check the file exists: `ls INSTRUCTIONS.md`
 3. If missing, you might have cloned incorrectly - delete the folder and clone again
 
@@ -94,7 +94,7 @@ If the file exists but isn't loading:
 - Try quitting the agent (`Ctrl+C`) and starting fresh
 - Check that the file isn't corrupted (open it in a text editor)
 
-**Still stuck?** [Open an issue](https://github.com/your-repo/agent-pm/issues) with details about what the agent is doing instead.
+**Still stuck?** [Open an issue](https://github.com/your-repo/anymanage/issues) with details about what the agent is doing instead.
 
 ---
 
@@ -122,10 +122,10 @@ If you expected STATE.md to exist (you've used the project before):
 
 State is stored locally. If you:
 - Moved to a new computer: State doesn't transfer automatically
-- Deleted the agent-pm folder: State was lost
+- Deleted the anymanage folder: State was lost
 - Used a different folder: Each folder has its own state
 
-**Still stuck?** [Open an issue](https://github.com/your-repo/agent-pm/issues).
+**Still stuck?** [Open an issue](https://github.com/your-repo/anymanage/issues).
 
 ---
 
@@ -134,7 +134,7 @@ State is stored locally. If you:
 **What this means:** The agent is running but not following the INSTRUCTIONS.md rules (like greeting you when it shouldn't, or not recognizing commands).
 
 **How to fix:**
-1. Make sure you're in the agent-pm folder (not a subfolder)
+1. Make sure you're in the anymanage folder (not a subfolder)
 2. Check INSTRUCTIONS.md wasn't modified accidentally
 3. Try quitting (`Ctrl+C`) and restarting
 
@@ -142,7 +142,7 @@ If the agent consistently misbehaves:
 - Different agents (Claude Code, opencode, codex) may have slightly different behaviors
 - Some edge cases aren't covered - the agent is doing its best
 
-**Still stuck?** [Open an issue](https://github.com/your-repo/agent-pm/issues) with an example of what you asked and what happened.
+**Still stuck?** [Open an issue](https://github.com/your-repo/anymanage/issues) with an example of what you asked and what happened.
 
 ---
 
@@ -162,7 +162,7 @@ Common causes:
 - Name collision with existing entity
 - Typo in entity name
 
-**Still stuck?** [Open an issue](https://github.com/your-repo/agent-pm/issues).
+**Still stuck?** [Open an issue](https://github.com/your-repo/anymanage/issues).
 
 ---
 
@@ -179,7 +179,7 @@ If the file wasn't modified at all:
 - Try more explicit phrasing: "Add [fact] to [Entity Name]'s profile"
 - Make sure the entity exists first
 
-**Still stuck?** [Open an issue](https://github.com/your-repo/agent-pm/issues).
+**Still stuck?** [Open an issue](https://github.com/your-repo/anymanage/issues).
 
 ---
 
@@ -197,7 +197,7 @@ If important information was missed:
 - Review what was extracted and manually add anything missing
 - Use "Add [fact] to profile" for things that should be profile info
 
-**Still stuck?** [Open an issue](https://github.com/your-repo/agent-pm/issues) with example notes and what you expected vs. got.
+**Still stuck?** [Open an issue](https://github.com/your-repo/anymanage/issues) with example notes and what you expected vs. got.
 
 ---
 
@@ -215,7 +215,7 @@ To prevent in future:
 - Use consistent naming
 - Check "Show all clients" before creating
 
-**Still stuck?** [Open an issue](https://github.com/your-repo/agent-pm/issues).
+**Still stuck?** [Open an issue](https://github.com/your-repo/anymanage/issues).
 
 ---
 
@@ -235,7 +235,7 @@ Available built-in skills:
 - get-status
 - weekly-review
 
-**Still stuck?** [Open an issue](https://github.com/your-repo/agent-pm/issues).
+**Still stuck?** [Open an issue](https://github.com/your-repo/anymanage/issues).
 
 ---
 
@@ -252,7 +252,7 @@ If truly nothing was created:
 - Try again with explicit request: "Run assessment for [Entity] and save to deliverables"
 - Check for error messages in the response
 
-**Still stuck?** [Open an issue](https://github.com/your-repo/agent-pm/issues).
+**Still stuck?** [Open an issue](https://github.com/your-repo/anymanage/issues).
 
 ---
 
@@ -261,7 +261,7 @@ If truly nothing was created:
 **What this means:** The agent isn't finding the specialist definitions.
 
 **How to fix:**
-1. Make sure you're in the agent-pm folder
+1. Make sure you're in the anymanage folder
 2. Check the specialists exist: `ls .claude/agents/` or `ls .github/agents/`
 3. Try asking differently: "/specialists" or "List available specialists"
 
@@ -269,7 +269,7 @@ If specialists folder is missing:
 - You might have an incomplete installation
 - Clone the repository again
 
-**Still stuck?** [Open an issue](https://github.com/your-repo/agent-pm/issues).
+**Still stuck?** [Open an issue](https://github.com/your-repo/anymanage/issues).
 
 ---
 
@@ -280,15 +280,15 @@ If specialists folder is missing:
 **What this means:** You've trained your voice but the system can't find the profile.
 
 **How to fix:**
-1. Check primary location: `~/.agent-pm/voice/voice_profile.md`
+1. Check primary location: `~/.anymanage/voice/voice_profile.md`
 2. Check fallback location: `ops/voice/voice_profile.md`
 3. If neither exists, you need to run voice training again
 
 The profile might be in the wrong location:
-- Primary (portable): `~/.agent-pm/voice/`
+- Primary (portable): `~/.anymanage/voice/`
 - Fallback (project): `ops/voice/`
 
-**Still stuck?** [Open an issue](https://github.com/your-repo/agent-pm/issues).
+**Still stuck?** [Open an issue](https://github.com/your-repo/anymanage/issues).
 
 ---
 
@@ -305,7 +305,7 @@ Voice only applies to trained content types. If you trained on emails but are wr
 
 To force voice application: "Write [content] using my voice profile"
 
-**Still stuck?** [Open an issue](https://github.com/your-repo/agent-pm/issues).
+**Still stuck?** [Open an issue](https://github.com/your-repo/anymanage/issues).
 
 ---
 
@@ -324,7 +324,7 @@ Good samples:
 - Not heavily edited by others
 - Represent how you actually write (not aspirational)
 
-**Still stuck?** [Open an issue](https://github.com/your-repo/agent-pm/issues) (don't include your actual writing samples for privacy).
+**Still stuck?** [Open an issue](https://github.com/your-repo/anymanage/issues) (don't include your actual writing samples for privacy).
 
 ---
 
@@ -348,7 +348,7 @@ Set the environment variable:
 **For Claude Code:**
 Claude Code typically handles authentication through the app. Make sure you're logged in.
 
-**Still stuck?** [Open an issue](https://github.com/your-repo/agent-pm/issues).
+**Still stuck?** [Open an issue](https://github.com/your-repo/anymanage/issues).
 
 ---
 
@@ -379,7 +379,7 @@ This shouldn't happen in normal use - the agent handles git automatically. But i
 
 You don't need to worry about git. The agent manages it silently.
 
-**Still stuck?** [Open an issue](https://github.com/your-repo/agent-pm/issues).
+**Still stuck?** [Open an issue](https://github.com/your-repo/anymanage/issues).
 
 ---
 
@@ -398,7 +398,7 @@ git log --oneline [filename]
 git checkout [commit] -- [filename]
 ```
 
-**Still stuck?** [Open an issue](https://github.com/your-repo/agent-pm/issues).
+**Still stuck?** [Open an issue](https://github.com/your-repo/anymanage/issues).
 
 ---
 
@@ -406,7 +406,7 @@ git checkout [commit] -- [filename]
 
 If your issue isn't listed here:
 
-1. **Search existing issues:** [github.com/your-repo/agent-pm/issues](https://github.com/your-repo/agent-pm/issues)
+1. **Search existing issues:** [github.com/your-repo/anymanage/issues](https://github.com/your-repo/anymanage/issues)
 2. **Ask the agent:** Describe your problem - it might be able to help diagnose
 3. **Open a new issue:** Include:
    - What you were trying to do

@@ -1,6 +1,6 @@
 # Video Script: Voice Training
 
-**Video title:** Agent PM: Train the AI to Write Like You
+**Video title:** AnyManage: Train the AI to Write Like You
 **Target length:** 3-4 minutes
 **Audience:** Users comfortable with basic system, want advanced feature
 **Tone:** Conversational, enthusiastic but not over-the-top, Seth's voice
@@ -12,7 +12,7 @@
 | VISUAL | AUDIO |
 |--------|-------|
 | SHOW: Terminal with Claude Code | "Okay, this one's optional but it's one of my favorite features." |
-| SHOW: Text overlay "AI writes like you" | "You can train Agent PM to write like you. Emails, documents, chat messages - all in your voice." |
+| SHOW: Text overlay "AI writes like you" | "You can train AnyManage to write like you. Emails, documents, chat messages - all in your voice." |
 | SHOW: Before/after comparison (generic vs personalized text) | "Instead of sounding like a robot wrote it (because one did), it sounds like you wrote it." |
 | SHOW: Back to terminal | "Less editing. More authentic output. Let me show you how it works." |
 
@@ -116,7 +116,7 @@
 Paste this in YouTube description:
 
 ```
-Train Agent PM to write in your voice.
+Train AnyManage to write in your voice.
 
 Instead of generic AI output, you get emails and documents that sound like you wrote them.
 

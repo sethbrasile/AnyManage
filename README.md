@@ -1,12 +1,12 @@
-# Agent PM
+# AnyManage
 
-**AI project management for non-technical users.** Tell it what to do in plain English. It handles the files, git, and technical details.
+**Manage anything with AI conversation.** No technical skills required. Clients, projects, notes — whatever you track.
 
 ## Quick Start
 
 **One command:**
 ```bash
-git clone https://github.com/your-repo/agent-pm.git && cd agent-pm && claude
+git clone https://github.com/yourusername/anymanage.git && cd anymanage && claude
 ```
 
 Then type: `Add new client Acme Corp`
@@ -33,7 +33,7 @@ Just talk to it naturally. You don't need to memorize commands.
 
 ## How It Works
 
-Agent PM is a file structure plus AI instructions. You talk to the AI naturally, and it:
+AnyManage is a file structure plus AI instructions. You talk to the AI naturally, and it:
 - Creates folders for clients (or projects, patients, whatever you configure)
 - Organizes notes and documents
 - Tracks work and status

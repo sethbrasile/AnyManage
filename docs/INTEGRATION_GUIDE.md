@@ -1,6 +1,6 @@
 # Integration Guide
 
-Integrations connect your AI assistant to external tools you already use. They're completely optional - Agent PM works fully without them.
+Integrations connect your AI assistant to external tools you already use. They're completely optional - AnyManage works fully without them.
 
 ---
 

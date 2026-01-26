@@ -430,7 +430,7 @@ Save approved profile to storage location with fallback handling.
 
 **Primary location:**
 ```
-~/.agent-pm/voice/voice_profile.md
+~/.anymanage/voice/voice_profile.md
 ```
 
 **Fallback location:**
@@ -443,8 +443,8 @@ ops/voice/voice_profile.md
 **Step 1: Try primary location**
 
 ```
-Check if ~/.agent-pm/ exists:
-- If yes: Save to ~/.agent-pm/voice/voice_profile.md
+Check if ~/.anymanage/ exists:
+- If yes: Save to ~/.anymanage/voice/voice_profile.md
 - If no: Create directory, then save
 ```
 
@@ -478,7 +478,7 @@ Create correction learning file alongside profile:
 
 **Primary:**
 ```
-~/.agent-pm/voice/CORRECTIONS.md
+~/.anymanage/voice/CORRECTIONS.md
 ```
 
 **Fallback:**
@@ -512,7 +512,7 @@ The system will learn from these corrections to improve your voice profile.
 ```
 Voice profile saved!
 
-Location: ~/.agent-pm/voice/voice_profile.md
+Location: ~/.anymanage/voice/voice_profile.md
 
 Your voice is now active. The system will automatically use it when:
 - Writing emails
@@ -522,7 +522,7 @@ Your voice is now active. The system will automatically use it when:
 
 To improve over time:
 - Edit content the system generates
-- Log corrections in ~/.agent-pm/voice/CORRECTIONS.md
+- Log corrections in ~/.anymanage/voice/CORRECTIONS.md
 - Periodically tell me: "Review my voice corrections"
 
 Try it: "Write an email to [recipient] about [topic]"
@@ -540,7 +540,7 @@ Voice profile automatically activates when:
 - Profile exists in storage location
 
 **Loading order:**
-1. Check ~/.agent-pm/voice/voice_profile.md
+1. Check ~/.anymanage/voice/voice_profile.md
 2. If not found, check ops/voice/voice_profile.md
 3. If not found, use default agent voice
 
@@ -581,7 +581,7 @@ Updated voice profile with correction.
 
 User logs corrections independently:
 ```
-User adds to ~/.agent-pm/voice/CORRECTIONS.md:
+User adds to ~/.anymanage/voice/CORRECTIONS.md:
 
 ## Corrections Log
 
@@ -666,7 +666,7 @@ Agent: [Save to storage location]
 
 Agent: Voice profile saved!
 
-Location: ~/.agent-pm/voice/voice_profile.md
+Location: ~/.anymanage/voice/voice_profile.md
 
 Your voice is now active.
 ```
@@ -745,7 +745,7 @@ Here's your complete profile - please save it manually:
 
 [Display full profile]
 
-Save to: ~/.agent-pm/voice/voice_profile.md
+Save to: ~/.anymanage/voice/voice_profile.md
 
 Or paste it back to me later and I'll retry saving.
 ```
@@ -906,13 +906,13 @@ Approve and save
 ```
 Voice profile saved!
 
-Location: ~/.agent-pm/voice/voice_profile.md
+Location: ~/.anymanage/voice/voice_profile.md
 
 Your voice is now active. The system will automatically use it when writing emails and chat messages.
 
 To improve over time:
 - Edit content the system generates
-- Log corrections in ~/.agent-pm/voice/CORRECTIONS.md
+- Log corrections in ~/.anymanage/voice/CORRECTIONS.md
 
 Try it: "Write an email to [recipient] about [topic]"
 ```
@@ -977,7 +977,7 @@ Voice profile looks good. Saving now...
 
 Voice profile saved!
 
-Location: ~/.agent-pm/voice/voice_profile.md
+Location: ~/.anymanage/voice/voice_profile.md
 
 Your voice is now active.
 ```
@@ -1100,7 +1100,7 @@ Yes, that's me. Save it.
 ```
 Voice profile saved!
 
-Location: ~/.agent-pm/voice/voice_profile.md
+Location: ~/.anymanage/voice/voice_profile.md
 ```
 
 ## Integration with Other Workflows

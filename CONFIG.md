@@ -5,7 +5,7 @@ entity_profile_doc: ENTITY_PROFILE
 entity_roadmap_doc: ENTITY_ROADMAP
 ---
 
-# Agent PM Configuration
+# AnyManage Configuration
 
 This system manages **clients** for your organization.
 

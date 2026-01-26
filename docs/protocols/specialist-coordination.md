@@ -104,7 +104,7 @@ Specialists access knowledge progressively across four layers.
 
 ### Layer 1: Base PM Knowledge (Always Load)
 
-**What:** Core Agent PM protocols and workflows
+**What:** Core AnyManage protocols and workflows
 
 **Location:**
 - `INSTRUCTIONS.md` (main agent instructions)
@@ -887,14 +887,14 @@ Specialists load voice profile during startup, after loading entity knowledge.
 2. Load Layer 2: Domain Knowledge (if relevant)
 3. Load Layer 3: Agency Knowledge (preferences, processes)
 4. Load Layer 4: Entity Knowledge (profile, knowledge/)
-5. **Load Voice Profile:** Check `~/.agent-pm/voice/voice_profile.md` → `ops/voice/voice_profile.md`
+5. **Load Voice Profile:** Check `~/.anymanage/voice/voice_profile.md` → `ops/voice/voice_profile.md`
 6. Begin specialist work
 
 **Voice profile loading:**
 
 ```
 Check primary location:
-  ~/.agent-pm/voice/voice_profile.md
+  ~/.anymanage/voice/voice_profile.md
 
 If not found, check fallback:
   ops/voice/voice_profile.md

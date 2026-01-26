@@ -1,6 +1,6 @@
 # Customization Guide
 
-Agent PM is designed to adapt to your industry. Out of the box, it manages "clients" for a marketing agency. But you can change it to manage projects, products, patients, engagements, or anything else you track.
+AnyManage is designed to adapt to your industry. Out of the box, it manages "clients" for a marketing agency. But you can change it to manage projects, products, patients, engagements, or anything else you track.
 
 This guide walks through every customization point.
 
@@ -324,7 +324,7 @@ When processing meeting notes, look for:
 
 ## Create Custom Skills
 
-Skills are reusable workflows. Agent PM comes with basic skills (process-notes, get-status, weekly-review), but you can create your own.
+Skills are reusable workflows. AnyManage comes with basic skills (process-notes, get-status, weekly-review), but you can create your own.
 
 ### Skill Location
 
@@ -410,7 +410,7 @@ When triggered:
 
 ## Industry Examples
 
-Here's how to configure Agent PM for different industries:
+Here's how to configure AnyManage for different industries:
 
 ### Marketing Agency (Default)
 
@@ -476,7 +476,7 @@ Here's how to configure Agent PM for different industries:
 
 ## Step-by-Step: Changing from Clients to Projects
 
-Here's the exact process to convert a fresh Agent PM install from "clients" to "projects":
+Here's the exact process to convert a fresh AnyManage install from "clients" to "projects":
 
 1. **Edit CONFIG.md:**
    ```markdown

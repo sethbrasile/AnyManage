@@ -1,6 +1,6 @@
 # Codex Setup Tutorial
 
-This guide walks you through setting up Agent PM with OpenAI Codex. No terminal experience required - we'll explain every step.
+This guide walks you through setting up AnyManage with OpenAI Codex. No terminal experience required - we'll explain every step.
 
 **Codex is OpenAI's code-focused AI.** It's a good choice if you're already using OpenAI products.
 
@@ -98,14 +98,14 @@ $env:OPENAI_API_KEY="your-key-here"
 
 ---
 
-## Step 5: Download Agent PM
+## Step 5: Download AnyManage
 
-Download the Agent PM files.
+Download the AnyManage files.
 
 **Type:**
 
 ```bash
-git clone https://github.com/your-repo/agent-pm.git
+git clone https://github.com/your-repo/anymanage.git
 ```
 
 **What happens:** Your computer downloads all the project files.
@@ -121,7 +121,7 @@ Move into the downloaded folder.
 **Type:**
 
 ```bash
-cd agent-pm
+cd anymanage
 ```
 
 **Verify:**
@@ -130,7 +130,7 @@ cd agent-pm
 pwd
 ```
 
-Should end with `/agent-pm`.
+Should end with `/anymanage`.
 
 ---
 
@@ -174,7 +174,7 @@ You've created your first client.
 
 ## Codex-Specific Notes
 
-**Model Selection:** Codex might offer different model options. For Agent PM:
+**Model Selection:** Codex might offer different model options. For AnyManage:
 - Use the most capable model available
 - Code-focused models work well
 - GPT-4 variants recommended for complex reasoning
@@ -184,7 +184,7 @@ You've created your first client.
 - Some edge cases might behave differently
 - Token limits vary by model
 
-These are minor. Core Agent PM functionality works the same.
+These are minor. Core AnyManage functionality works the same.
 
 **Rate Limits:** OpenAI has API rate limits. If you hit them:
 - Wait a few seconds between commands
@@ -243,4 +243,4 @@ You might not have access to the requested model. Check your OpenAI account for 
 
 ---
 
-*Setup complete! You're ready to use Agent PM with Codex.*
+*Setup complete! You're ready to use AnyManage with Codex.*

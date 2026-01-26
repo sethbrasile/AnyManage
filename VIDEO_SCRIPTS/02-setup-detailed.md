@@ -1,6 +1,6 @@
 # Video Script: Full Setup Walkthrough
 
-**Video title:** Agent PM Setup: From Zero to Running in 5 Minutes
+**Video title:** AnyManage Setup: From Zero to Running in 5 Minutes
 **Target length:** 5-7 minutes
 **Audience:** Non-technical PMs who have never used terminal
 **Tone:** Conversational, patient, Seth's voice
@@ -11,7 +11,7 @@
 
 | VISUAL | AUDIO |
 |--------|-------|
-| SHOW: Title card "Agent PM Setup" | "Alright, full setup walkthrough. By the end of this, you'll have Agent PM running and you'll have added your first client." |
+| SHOW: Title card "AnyManage Setup" | "Alright, full setup walkthrough. By the end of this, you'll have AnyManage running and you'll have added your first client." |
 | SHOW: Desktop - clean, no terminal open yet | "I'm going to assume you've never opened a terminal before - that's totally fine. We'll start from scratch." |
 | SHOW: Text overlay "~5 minutes" | "This takes about 5 minutes. Maybe less if your internet is fast." |
 
@@ -45,13 +45,13 @@
 
 | VISUAL | AUDIO |
 |--------|-------|
-| SHOW: Terminal with prompt ready | "First command: we're going to download the Agent PM files from GitHub." |
+| SHOW: Terminal with prompt ready | "First command: we're going to download the AnyManage files from GitHub." |
 | SHOW: Text overlay "git clone = download from GitHub" | "The command is 'git clone' followed by the URL. I'll put this in the description so you can copy it." |
-| TYPE: `git clone https://github.com/your-repo/agent-pm.git` | "Type exactly this: git clone https://github.com/your-repo/agent-pm.git" |
+| TYPE: `git clone https://github.com/your-repo/anymanage.git` | "Type exactly this: git clone https://github.com/your-repo/anymanage.git" |
 | SHOW: Press Enter, output starts scrolling | "Hit Enter. You'll see a bunch of text scroll by - that's git downloading everything." |
 | SHOW: Output continues | "This takes maybe 30 seconds depending on your internet." |
 | SHOW: Download completes, prompt returns | "When you see your prompt again (the blinking cursor), it's done." |
-| SHOW: New folder "agent-pm" visible in Finder/Explorer | "And if you look in Finder - or File Explorer on Windows - there's your new folder: agent-pm." |
+| SHOW: New folder "anymanage" visible in Finder/Explorer | "And if you look in Finder - or File Explorer on Windows - there's your new folder: anymanage." |
 
 **Production notes:**
 - Don't speed up the download - show real time
@@ -66,9 +66,9 @@
 | VISUAL | AUDIO |
 |--------|-------|
 | SHOW: Terminal with prompt | "Now we need to move into that folder. The command is 'cd' - stands for 'change directory'." |
-| TYPE: `cd agent-pm` | "Type: cd agent-pm" |
+| TYPE: `cd anymanage` | "Type: cd anymanage" |
 | SHOW: Press Enter | "Hit Enter." |
-| SHOW: Prompt may change to show `agent-pm` | "Notice the prompt might change - it's showing you're now inside the agent-pm folder." |
+| SHOW: Prompt may change to show `anymanage` | "Notice the prompt might change - it's showing you're now inside the anymanage folder." |
 | SHOW: Terminal with updated prompt | "If your prompt doesn't change, that's fine too - some terminals are configured differently. You're still in the right place." |
 | TYPE: `ls` | "Quick sanity check: type 'ls' (lowercase L-S) to list what's in here." |
 | SHOW: List of files/folders | "You should see folders like 'docs', 'entities', 'templates' - that means you're in the right spot." |
@@ -88,7 +88,7 @@
 | TYPE: `claude` | "Just type: claude" |
 | SHOW: Press Enter | "Hit Enter." |
 | SHOW: Claude Code initializing (loading text/spinner) | "It's loading up... reading the instructions... getting ready." |
-| SHOW: Claude Code prompt appears | "When you see this prompt, you're in. Claude Code has loaded Agent PM and it's ready to work." |
+| SHOW: Claude Code prompt appears | "When you see this prompt, you're in. Claude Code has loaded AnyManage and it's ready to work." |
 | SHOW: Highlight the welcome or ready state | "That's it. You just set up an AI project management system. (Pretty quick, right?)" |
 
 **Production notes:**
@@ -154,13 +154,13 @@
 Paste this in YouTube description:
 
 ```
-Full setup walkthrough for Agent PM.
+Full setup walkthrough for AnyManage.
 
 You'll go from never having opened a terminal to having the system running and your first client added. Takes about 5 minutes.
 
 Commands from the video:
-git clone https://github.com/your-repo/agent-pm.git
-cd agent-pm
+git clone https://github.com/your-repo/anymanage.git
+cd anymanage
 claude
 Add new client Acme Corp
 

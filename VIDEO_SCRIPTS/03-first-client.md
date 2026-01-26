@@ -1,6 +1,6 @@
 # Video Script: Adding Your First Client
 
-**Video title:** Agent PM: Adding and Managing Your First Client
+**Video title:** AnyManage: Adding and Managing Your First Client
 **Target length:** 4-5 minutes
 **Audience:** Users who have completed setup
 **Tone:** Conversational, practical, Seth's voice
@@ -11,7 +11,7 @@
 
 | VISUAL | AUDIO |
 |--------|-------|
-| SHOW: Terminal with Claude Code running | "Okay, so you've got Agent PM running. We added Acme Corp in the setup video." |
+| SHOW: Terminal with Claude Code running | "Okay, so you've got AnyManage running. We added Acme Corp in the setup video." |
 | SHOW: Quick flash of Acme Corp in entities folder | "Now let's actually work with it." |
 
 **Production notes:**
@@ -24,7 +24,7 @@
 
 | VISUAL | AUDIO |
 |--------|-------|
-| SHOW: entities/ folder structure | "First - quick concept. In Agent PM, the things you manage are called 'entities'." |
+| SHOW: entities/ folder structure | "First - quick concept. In AnyManage, the things you manage are called 'entities'." |
 | SHOW: Text overlay "Entity = The thing you're managing" | "By default, that's clients. But it could be projects, candidates if you're a recruiter, properties if you're in real estate - it's configurable." |
 | SHOW: CONFIG.md with entity_type: client visible | "The CONFIG.md file sets what your entities are called. We're using 'client' but you can change it." |
 | SHOW: Back to terminal | "For this video, clients. But everything works the same way regardless of what you call them." |
@@ -121,7 +121,7 @@
 Paste this in YouTube description:
 
 ```
-Deep dive into managing clients in Agent PM.
+Deep dive into managing clients in AnyManage.
 
 Learn:
 - What entities are (and how to customize them)

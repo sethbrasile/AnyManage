@@ -1,4 +1,4 @@
-# Project Milestones: Agent PM
+# Project Milestones: AnyManage
 
 ## v1.0 MVP (Shipped: 2026-01-25)
 

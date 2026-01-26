@@ -1,10 +1,10 @@
 # Reference Example: Digital Marketing Agency
 
-This example shows what Agent PM looks like in action with realistic fake data. Study it before setting up your own system.
+This example shows what AnyManage looks like in action with realistic fake data. Study it before setting up your own system.
 
 ## What This Example Demonstrates
 
-A small digital marketing agency using Agent PM to manage three clients. Each client is at a different stage, so you can see what the system looks like at various points in your workflow.
+A small digital marketing agency using AnyManage to manage three clients. Each client is at a different stage, so you can see what the system looks like at various points in your workflow.
 
 ## The Three Clients
 

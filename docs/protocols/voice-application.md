@@ -17,7 +17,7 @@ The voice application protocol defines when and how to apply the user's trained 
 
 | Aspect | Pattern |
 |--------|---------|
-| **Profile Location** | `~/.agent-pm/voice/voice_profile.md` (primary), `ops/voice/voice_profile.md` (fallback) |
+| **Profile Location** | `~/.anymanage/voice/voice_profile.md` (primary), `ops/voice/voice_profile.md` (fallback) |
 | **Auto-Activation** | Content type in profile → Voice applies automatically |
 | **Suppression** | "without my voice", "in a neutral tone", "standard format" |
 | **Tone Modifiers** | `professional_client`, `business_partner`, `formal`, `casual`, `family_client` |
@@ -32,7 +32,7 @@ Before generating any content, the agent checks for a voice profile.
 
 **Step 1: Check primary location**
 ```
-~/.agent-pm/voice/voice_profile.md
+~/.anymanage/voice/voice_profile.md
 ```
 
 If file exists and is valid → Load this profile
@@ -221,7 +221,7 @@ The full workflow for applying voice to generated content.
 
 ### Step 1: Load Profile
 
-1. Check primary location (`~/.agent-pm/voice/voice_profile.md`)
+1. Check primary location (`~/.anymanage/voice/voice_profile.md`)
 2. If not found, check fallback (`ops/voice/voice_profile.md`)
 3. If neither found, skip voice application (generate neutral content)
 4. If found, validate profile structure
@@ -355,7 +355,7 @@ Agent: "I don't have a voice profile yet. Want to train my voice? (5-step proces
 - Detect corruption during validation
 - Log to `ops/logs/voice-application.json`:
   ```json
-  {"timestamp": "2026-01-25T16:00:00Z", "event": "profile_corrupted", "location": "~/.agent-pm/voice/voice_profile.md", "issue": "Missing Core Voice DNA section"}
+  {"timestamp": "2026-01-25T16:00:00Z", "event": "profile_corrupted", "location": "~/.anymanage/voice/voice_profile.md", "issue": "Missing Core Voice DNA section"}
   ```
 - Fall back to neutral generation (no voice)
 - DO NOT expose error to user
@@ -427,7 +427,7 @@ Voice training creates the profile → Voice application uses it
 
 **Sequence:**
 1. User completes voice training (`docs/protocols/voice-training.md`)
-2. Profile saved to `~/.agent-pm/voice/voice_profile.md`
+2. Profile saved to `~/.anymanage/voice/voice_profile.md`
 3. Voice application loads profile and applies to content
 4. Correction learning updates profile over time
 
@@ -478,7 +478,7 @@ Write email to Sarah at Acme Corp about the Q1 results
 
 **Agent (internal process):**
 ```
-1. Load profile: ~/.agent-pm/voice/voice_profile.md found
+1. Load profile: ~/.anymanage/voice/voice_profile.md found
 2. Detect content type: Email
 3. Check profile: Email patterns exist
 4. Auto-apply: Yes

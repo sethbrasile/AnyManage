@@ -3,7 +3,7 @@
 This directory stores project-level voice profiles as a fallback location.
 
 **Storage priority:**
-1. User home: `~/.agent-pm/voice/voice_profile.md` (primary - portable across projects)
+1. User home: `~/.anymanage/voice/voice_profile.md` (primary - portable across projects)
 2. Project: `ops/voice/voice_profile.md` (fallback - if home not found)
 
 Agent checks home directory first, then falls back to project level.
@@ -12,4 +12,4 @@ Agent checks home directory first, then falls back to project level.
 - `voice_profile.md` - Main voice profile (created after training)
 - `CORRECTIONS.md` - Append-only correction log (optional, for async learning)
 
-**Note:** Home directory location (`~/.agent-pm/voice/`) is created by the voice training process, not pre-created here.
+**Note:** Home directory location (`~/.anymanage/voice/`) is created by the voice training process, not pre-created here.

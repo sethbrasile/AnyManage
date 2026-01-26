@@ -31,7 +31,7 @@ Without the skill, you'd have to explain all that every time. With the skill, yo
 
 ## Built-in Skills
 
-Agent PM comes with these skills:
+AnyManage comes with these skills:
 
 ### process-notes
 

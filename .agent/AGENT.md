@@ -1,4 +1,4 @@
-# Agent PM - Generic Agent Instructions
+# AnyManage - Generic Agent Instructions
 
 ## Role
 

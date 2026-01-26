@@ -1,6 +1,6 @@
 # Video Script: Processing Notes
 
-**Video title:** Agent PM: Turn Meeting Notes into Tasks Automatically
+**Video title:** AnyManage: Turn Meeting Notes into Tasks Automatically
 **Target length:** 4-5 minutes
 **Audience:** Users who have added at least one client
 **Tone:** Conversational, practical, Seth's voice
@@ -14,7 +14,7 @@
 | SHOW: Stock image or text overlay of messy notes | "Meeting notes pile up. You know how it is." |
 | SHOW: Text overlay "Where was that action item?" | "Somewhere in there is who's doing what, important facts about the client, stuff that needs to go on the calendar..." |
 | SHOW: Highlight a buried action item in notes | "...and it takes forever to dig through and extract it all." |
-| SHOW: Terminal with Claude Code | "Agent PM fixes this." |
+| SHOW: Terminal with Claude Code | "AnyManage fixes this." |
 
 **Production notes:**
 - Keep problem statement quick - everyone knows this pain

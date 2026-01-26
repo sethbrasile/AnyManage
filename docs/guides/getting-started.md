@@ -1,6 +1,6 @@
-# Getting Started with Agent PM
+# Getting Started with AnyManage
 
-This guide explains what Agent PM is and how it works. For specific setup instructions, see the agent-specific guides:
+This guide explains what AnyManage is and how it works. For specific setup instructions, see the agent-specific guides:
 
 - [Claude Code setup](claude-code-setup.md)
 - [opencode setup](opencode-setup.md)
@@ -8,7 +8,7 @@ This guide explains what Agent PM is and how it works. For specific setup instru
 
 ## What Is This?
 
-Agent PM is an AI-powered system that helps you manage clients, projects, or whatever you're tracking. You talk to it in plain English, and it handles all the file organization and technical details.
+AnyManage is an AI-powered system that helps you manage clients, projects, or whatever you're tracking. You talk to it in plain English, and it handles all the file organization and technical details.
 
 Think of it like having an assistant who:
 - Creates folders and documents when you add a new client
@@ -36,7 +36,7 @@ You never need to learn commands or syntax. The AI figures out what you mean.
 When you start, you'll have these folders:
 
 ```
-agent-pm/
+anymanage/
   entities/           <- Your clients/projects live here
   templates/          <- Document templates for new entities
   ops/                <- Team operations and logs
@@ -72,7 +72,7 @@ Team-level stuff: playbooks, voice profiles, logs. This isn't client-specific - 
 
 ## What Happens When You Start
 
-When you open a coding agent in the agent-pm folder, it:
+When you open a coding agent in the anymanage folder, it:
 
 1. Reads INSTRUCTIONS.md to understand how to behave
 2. Loads your current state (if you were working on something)

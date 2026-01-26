@@ -1,4 +1,4 @@
-# Agent PM - Project State
+# AnyManage - Project State
 
 **Purpose:** Track current position, progress, and accumulated context across sessions.
 
