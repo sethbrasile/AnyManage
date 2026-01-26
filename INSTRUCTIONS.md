@@ -12,8 +12,23 @@
 
 1. **Load STATE.md** (if exists) - current work context
 2. **Check PAUSE.md** (if exists) - offer to resume if found
-3. **Silent ready** - no greeting, no status summary, just await instructions
-4. **Load more context as needed** - don't preload everything upfront
+3. **Check integrations** (if INTEGRATIONS.md exists) - quick health check, report status
+4. **Silent ready** - no greeting, no status summary, just await instructions
+5. **Load more context as needed** - don't preload everything upfront
+
+### Integration Status (if configured)
+
+Check INTEGRATIONS.md for configured integrations. For each:
+1. Quick health check (3-second timeout)
+2. Display status: `Integrations: Trello (connected)` or `Trello (unavailable - using local data)`
+
+If integration unavailable at startup:
+- Note in status line
+- Don't block startup
+- Monitor for recovery during session
+
+If no integrations configured:
+- Skip silently (integrations are optional)
 
 ## File Structure
 
@@ -141,6 +156,35 @@ Agent checks primary first, falls back to project level.
 **Capability Assessment:** If running in terminal-only environment, agent generates a portable extraction prompt user can take to Claude Desktop or ChatGPT web to complete training there.
 
 See `templates/VOICE_TRAINING_EXERCISE.md` for the guided training workflow.
+
+## Integrations (Optional)
+
+Connect external tools like Trello while keeping local files as your source of truth.
+
+**Discovery:** User asks "What integrations are available?" -> Show options. Check `INTEGRATIONS.md` for current status.
+
+**Setup:** Say "Add Trello integration" -> Guided setup handles everything. User provides credentials when prompted, agent handles technical configuration.
+
+**Sync Commands:**
+- "Sync trello" - Full bidirectional sync
+- "Pull from trello" - Get updates from Trello only
+- "Push to trello" - Send local changes only
+- "Check integrations" - See connection status
+
+**Dual Source of Truth Pattern:**
+- External tool = status tracking (team visibility)
+- Local files = context and history (always available)
+
+**Graceful Degradation:** If integration unavailable:
+1. Display notice: "[Service] unavailable - working with local data"
+2. Continue working normally with local files
+3. Prompt to sync when service recovers
+
+**Conflict Resolution:** External wins on true conflict (both changed since last sync). User is notified. Local context/notes always preserved.
+
+Integrations are completely optional - the system works fully without them.
+
+See `docs/INTEGRATION_GUIDE.md` for user documentation, `docs/protocols/integration-framework.md` for protocol details, `ops/TASK_SYNC_PLAYBOOK.md` for daily workflow guide.
 
 ## Code Style
 
