@@ -6,7 +6,7 @@
 
 **One command:**
 ```bash
-git clone https://github.com/yourusername/anymanage.git && cd anymanage && claude
+git clone https://github.com/sethbrasile/anymanage.git && cd anymanage && claude
 ```
 
 Then type: `Help me set up`
