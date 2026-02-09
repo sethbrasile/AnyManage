@@ -16,10 +16,7 @@ Use these checkbox formats to track status:
 
 ### High Priority
 
-<!-- Format: - [-] [Entity Name] - Current phase/task - YYYY-MM-DD -->
-<!-- Example: - [-] Guardian 6 - Website redesign planning - 2026-01-24 -->
-
-*No high priority entities yet*
+- [-] Lisa May Eco - Video production & influencer kickoff - 2026-01-25
 
 ### Medium Priority
 
@@ -51,4 +48,4 @@ Use these checkbox formats to track status:
 
 ---
 
-*Last updated: 2026-01-24*
+*Last updated: 2026-01-25*
