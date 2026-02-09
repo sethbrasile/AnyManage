@@ -16,10 +16,7 @@ Use these checkbox formats to track status:
 
 ### High Priority
 
-<!-- Format: - [-] [Entity Name] - Current phase/task - YYYY-MM-DD -->
-<!-- Example: - [-] Guardian 6 - Website redesign planning - 2026-01-24 -->
-
-*No high priority entities yet*
+- [-] Bloom Natural Beauty - Video production & influencer kickoff - 2026-01-25
 
 ### Medium Priority
 
@@ -38,7 +35,7 @@ Use these checkbox formats to track status:
 ## Recently Completed
 
 <!-- Format: - [x] **[Entity Name] - Milestone** - Brief description YYYY-MM-DD -->
-<!-- Example: - [x] **Lisa May - Marketing Audit** - Identified 12 improvement areas 2026-01-20 -->
+<!-- Example: - [x] **Bloom Natural - Marketing Audit** - Identified 12 improvement areas 2026-01-20 -->
 
 *No completed work yet*
 
@@ -51,4 +48,4 @@ Use these checkbox formats to track status:
 
 ---
 
-*Last updated: 2026-01-24*
+*Last updated: 2026-01-25*

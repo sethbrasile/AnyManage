@@ -9,18 +9,26 @@
 | Field | Value |
 |-------|-------|
 | **Legal Name** | [Full legal entity name] |
-| **Industry/Vertical** | [e.g., Technology, Healthcare, Retail] |
-| **Company Size** | [Number of employees, e.g., 50-100] |
-| **Revenue Range** | [e.g., $1M-$5M annually] |
+| **Business Category** | [Service / Restaurant / Retail / E-commerce] |
+| **Industry/Vertical** | [e.g., HVAC, Fine Dining, SaaS] |
+| **Company Size** | [Number of employees, e.g., 5-10] |
 | **Founded** | [Year founded] |
 | **Headquarters** | [City, State/Country] |
-| **Website** | [https://example.com] |
-
-### Business Description
-
-[Brief description of what this entity does, their primary products/services, and target market. 2-3 sentences that capture the essence of the business.]
 
 ---
+
+## Digital Presence
+
+| Platform | Handle/URL | Notes |
+|----------|------------|-------|
+| **Website** | [https://example.com] | |
+| **Instagram** | [@handle] | |
+| **Facebook** | [URL] | |
+| **LinkedIn** | [URL] | |
+| **Other** | [e.g. TikTok, Pinterest] | |
+
+---
+
 
 ## Key Contacts
 

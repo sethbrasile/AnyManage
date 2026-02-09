@@ -95,7 +95,7 @@ entities/
 │   ├── assets/                 # Their files
 │   ├── notes/                  # Communications with them
 │   └── planning/               # Strategy for them
-└── Lisa May/
+└── Bloom Natural/
     ├── ENTITY_PROFILE.md
     ├── ENTITY_ROADMAP.md
     └── [same subfolder structure]
@@ -153,7 +153,7 @@ entities/
 ## Active Clients
 ### High Priority Clients
 - [-] [Guardian 6] - Planning & Scoping - 2026-01-12
-- [-] [Lisa May] - e-commerce strategy - 2026-01-12
+- [-] [Bloom Natural] - e-commerce strategy - 2026-01-12
 - [x] [Previous Client] - Campaign completed ✅ 2025-12-20
 
 ## Recently Completed
