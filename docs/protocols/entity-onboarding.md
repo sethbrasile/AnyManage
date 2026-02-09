@@ -146,6 +146,7 @@ Create the complete entity folder structure with templates.
 entities/[Normalized Name]/
   ENTITY_PROFILE.md
   ENTITY_ROADMAP.md
+  DIGEST.md
   notes/
     .gitkeep
   notes/archive/
@@ -186,7 +187,17 @@ mkdir -p "entities/[Name]/internal"
 - Update "Created" date to current date
 - Save to `entities/[Name]/ENTITY_ROADMAP.md`
 
-**Step 5: Create .gitkeep files**
+**Step 5: Create initial DIGEST.md**
+- Copy from `templates/DIGEST_TEMPLATE.md`
+- Replace `[Entity Name]` placeholder with actual entity name
+- Replace `[Date]` with current date
+- Fill in what's known (may be minimal — just entity name and "Onboarding" phase)
+- Leave unknown sections with template placeholders
+- Save to `entities/[Name]/DIGEST.md`
+
+The initial digest will be sparse — that's expected. It gets populated as the user adds profile details, processes notes, and works with the entity. The first meaningful refresh typically happens after note processing or profile building.
+
+**Step 6: Create .gitkeep files**
 - Create empty `entities/[Name]/notes/.gitkeep`
 - Create empty `entities/[Name]/notes/archive/.gitkeep`
 - Create empty `entities/[Name]/knowledge/.gitkeep`

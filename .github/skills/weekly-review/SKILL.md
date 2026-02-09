@@ -24,15 +24,24 @@ Trigger this skill when user:
 
 ## How It Works
 
-1. **Scan all entity ROADMAP.md files**
+1. **Start with the cross-entity index (fast path)**
+   - Read `.index/CROSS_ENTITY_INDEX.md` for an overview of all entities
+   - If the index exists and is recent, use it to identify which entities need deeper inspection
+   - If the index is missing or stale, fall back to scanning all roadmaps (step 1b)
+
+1b. **Fallback: Scan all entity ROADMAP.md files**
    - Read `entities/*/ENTITY_ROADMAP.md` for all entities
    - Get entity names from folder names
+   - This is the pre-index behavior and always works
 
-2. **Extract tasks by status**
-   - Completed this week: `[x]` items with date in past 7 days
-   - In progress: `[-]` items
-   - Active: `[ ]` items
-   - Overdue: Items with deadline in past
+2. **Deep-dive flagged entities**
+   - For entities flagged as needing attention, stale, or with approaching deadlines: read full ENTITY_ROADMAP.md
+   - For entities marked "on track" with no flags: use digest/index data, skip full roadmap read
+   - Extract tasks by status:
+     - Completed this week: `[x]` items with date in past 7 days
+     - In progress: `[-]` items
+     - Active: `[ ]` items
+     - Overdue: Items with deadline in past
 
 3. **Identify entities needing attention**
    - Overdue tasks (deadline passed)
@@ -45,6 +54,12 @@ Trigger this skill when user:
    - Per-entity breakdown
    - Attention flags and recommended actions
    - Next week priorities
+
+5. **Refresh indexes (end-of-review maintenance)**
+   - Regenerate `.index/CROSS_ENTITY_INDEX.md` from current state of all entities
+   - For each entity: refresh `DIGEST.md` if any data changed
+   - For each entity: review `knowledge/LEARNED_CONTEXT.md` — compress old entries (promote important insights to Key Insights, remove routine/outdated entries from Recent Context)
+   - This ensures indexes stay fresh even if incremental updates were missed during the week
 
 ## Output Format
 
@@ -155,8 +170,11 @@ Example: `/weekly-review`
 
 ## Related Files
 
-- Entity roadmaps: `entities/*/ENTITY_ROADMAP.md`
+- Cross-entity index: `.index/CROSS_ENTITY_INDEX.md` (fast overview, read first)
+- Entity digests: `entities/*/DIGEST.md` (per-entity summaries)
+- Entity roadmaps: `entities/*/ENTITY_ROADMAP.md` (full detail, deep-dive as needed)
 - Entity profiles: `entities/*/ENTITY_PROFILE.md`
+- Entity knowledge: `entities/*/knowledge/LEARNED_CONTEXT.md` (compressed during review)
 - Get status skill: `.github/skills/get-status/SKILL.md`
 
 ---

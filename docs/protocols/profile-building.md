@@ -323,6 +323,28 @@ Updated Acme Corp profile:
 
 **Rationale:** Per CONTEXT.md, users want efficient updates without unnecessary confirmation prompts. They can review changes in the profile if needed.
 
+## Digest Update
+
+After making profile changes, refresh the entity's `DIGEST.md` if the change affects information shown in the digest.
+
+### When to Update
+
+| Change Type | Digest Section Affected |
+|-------------|------------------------|
+| Entity info (industry, size, location, website) | At a Glance |
+| Key contacts | At a Glance (if primary contact changed) |
+| Business goals or priorities | Key Context (if significant shift) |
+| Communication preferences | Key Context (if it changes how we work with them) |
+| Background context, things to remember | Key Context (if significant) |
+
+### When to Skip
+
+Routine fact additions (adding a phone number, updating an email address) don't need a digest refresh. Only update when the change is meaningful enough to appear in the entity's summary view.
+
+If `DIGEST.md` doesn't exist for the entity, create one from current state using `templates/DIGEST_TEMPLATE.md`.
+
+Update the `<!-- Last refreshed: -->` date in the digest header when changes are made.
+
 ## Error Handling
 
 Handle common failure scenarios gracefully.

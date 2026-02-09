@@ -46,15 +46,26 @@ If no integrations configured:
 ```
 project-root/
   entities/           <- Managed entities (clients, projects, etc)
+    [Entity Name]/
+      ENTITY_PROFILE.md   <- Comprehensive entity info (source of truth)
+      ENTITY_ROADMAP.md   <- Task tracking and milestones (source of truth)
+      DIGEST.md           <- Agent-maintained quick summary (derived, auto-updated)
+      knowledge/          <- Learned context from interactions
+      notes/              <- Meeting notes and communications
+      deliverables/       <- Specialist work products
+      internal/           <- Internal-only content
   templates/          <- Document templates for entity creation
   ops/                <- Team operations, playbooks, and logs (logs gitignored)
   docs/protocols/     <- Detailed operational documentation
   docs/guides/        <- User-facing guides
+  .index/             <- Cross-entity indexes (derived, auto-updated)
   CONFIG.md           <- Entity type configuration
   ROADMAP.md          <- Master dashboard with all entities
   STATE.md            <- Current session state
   PAUSE.md            <- Resume marker (when present)
 ```
+
+**Derived files:** `DIGEST.md` and `.index/` files are agent-maintained summaries generated from source files (profiles, roadmaps, knowledge). They speed up retrieval but can be regenerated at any time with "rebuild index". Source files are always authoritative.
 
 ## Command Patterns
 

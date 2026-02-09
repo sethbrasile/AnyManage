@@ -86,6 +86,7 @@ For operations on multiple entities:
 | Update profile | "Add [fact] to X's profile" | `/update-profile X` |
 | List entities | "Show all clients" | `/list` |
 | Weekly review | "Run weekly review" | `/weekly-review` |
+| Rebuild index | "Rebuild index" | `/rebuild-index` |
 
 ## Namespace Conventions
 
@@ -121,3 +122,42 @@ Which one did you mean?
 To process notes, I need to know which client.
 Which client's notes should I process?
 ```
+
+## Rebuild Index Command
+
+Regenerates all derived files (digests and cross-entity index) from source files.
+
+### Trigger Detection
+
+| Pattern | Example |
+|---------|---------|
+| "Rebuild index" | "Rebuild index" |
+| "Refresh index" | "Refresh the index" |
+| "Rebuild digests" | "Rebuild all digests" |
+| `/rebuild-index` | `/rebuild-index` |
+
+### What It Does
+
+1. For each entity in `entities/`:
+   - Read ENTITY_PROFILE.md, ENTITY_ROADMAP.md, and knowledge/LEARNED_CONTEXT.md
+   - Generate fresh `DIGEST.md` from current state
+2. Generate fresh `.index/CROSS_ENTITY_INDEX.md` from all entity data
+3. Generate fresh `.index/TOPICS.md` from all entity digests and knowledge files (if topic index exists)
+4. Report: "Index rebuilt for N entities"
+
+### When It Runs Automatically
+
+- **Weekly review** always includes a full index refresh as its final step
+- **Entity onboarding** creates an initial DIGEST.md for the new entity
+- **Note processing** incrementally updates the relevant entity's digest and the cross-entity index
+
+### When to Run Manually
+
+- After importing or manually editing entity files outside the agent
+- If digests or indexes seem out of date
+- After recovering from errors
+
+### Graceful Behavior
+
+- If no entities exist: "No entities found — nothing to index."
+- If a single entity file is corrupted: skip it, rebuild the rest, report which entity was skipped

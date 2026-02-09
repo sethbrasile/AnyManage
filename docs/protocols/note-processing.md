@@ -332,6 +332,49 @@ If NOTES.md contains multiple sections:
 
 **Default approach:** Option A (clear after processing) unless user prefers to keep history.
 
+## Digest and Index Updates
+
+After applying extractions and archiving notes, update derived files to keep the entity's digest and indexes current.
+
+### Update Entity Digest
+
+Read `entities/[Name]/DIGEST.md` and refresh the following sections based on what was just extracted:
+
+1. **Active Work** — If new tasks were added to the roadmap, reflect them here
+2. **Upcoming Deadlines** — If extracted tasks have deadlines, add to the table
+3. **Recent Activity** — Add an entry for this note processing event (e.g., "2026-01-24: Processed meeting notes — 3 tasks, 1 profile update")
+4. **Key Context** — If a genuinely significant new insight was learned (not routine tasks), add or update a bullet
+5. **Topics** — If extracted content introduces a new topic area, add the tag
+
+If `DIGEST.md` doesn't exist yet, generate one from the current state of the entity's profile, roadmap, and knowledge files using `templates/DIGEST_TEMPLATE.md` as the structure.
+
+Update the `<!-- Last refreshed: -->` date in the header.
+
+### Update Key Insights
+
+If note processing revealed a genuinely important insight about the entity (decision-making style, risk profile, strategic direction, key relationship dynamic), promote it to the **Key Insights** section of `entities/[Name]/knowledge/LEARNED_CONTEXT.md`.
+
+**Promotion criteria:**
+- Would this change how we approach this entity?
+- Would a new team member need to know this?
+- Is this a pattern, not a one-time data point?
+
+If Key Insights already has ~20 bullets, replace the least-relevant one rather than exceeding the target.
+
+Most note processing events will NOT produce new Key Insights — routine tasks and calendar items don't qualify. Only significant context about the entity's preferences, constraints, opportunities, or relationship dynamics qualifies.
+
+### Tag Topics
+
+As items are extracted, assign one or more topic tags to the processing event. Topics are emergent — use whatever feels natural for the domain. Within a given user's domain, reuse existing topic names for consistency.
+
+**Examples:** seo, website, pricing, content-strategy, lead-generation, competitive-landscape, hiring, compliance
+
+These tags are recorded in:
+- The entity's `DIGEST.md` Topics field
+- `.index/TOPICS.md` (if it exists) — add/update the entity's entry under each relevant topic
+
+If `.index/TOPICS.md` doesn't exist yet, skip this step. The cross-entity index is built during Phase 2.
+
 ## Itemized Reporting
 
 After processing, provide detailed report of what was extracted and where it went.

@@ -24,26 +24,34 @@ Trigger this skill when user:
 
 ## How It Works
 
-1. **Identify target entity(ies)**
-   - Single entity: "Status of Acme"
-   - Multiple entities: "Status of Acme and Beta"
-   - All entities: "Status of all clients"
-   - No entity specified: Ask user or default to all
+### Single Entity
 
-2. **Read entity ROADMAP.md**
-   - Extract tasks with `- [ ]` (todo)
-   - Extract tasks with `- [-]` (in progress)
-   - Extract tasks with `- [x]` (completed)
-   - Note deadlines if present
-
-3. **Read entity PROFILE.md**
-   - Get last updated timestamp
-   - Note key dates or upcoming events
-
+1. **Identify target entity**
+   - "Status of Acme" → single entity
+2. **Read entity DIGEST.md** (fast path)
+   - If `entities/[Name]/DIGEST.md` exists, use it for the summary
+   - This gives Active Work, Key Context, Upcoming Deadlines, and Recent Activity in ~40-60 lines
+   - If the user asks follow-up questions needing more detail, then read full ROADMAP.md and PROFILE.md
+3. **Fallback: Read ROADMAP.md + PROFILE.md**
+   - If DIGEST.md doesn't exist, read the full source files (pre-index behavior)
+   - Extract tasks with `- [ ]` (todo), `- [-]` (in progress), `- [x]` (completed)
+   - Note deadlines, key dates from profile
 4. **Format status summary**
    - Group by status (active, in-progress, completed)
    - Highlight items needing attention
    - Suggest next steps
+
+### All Entities / Multiple Entities
+
+1. **Read `.index/CROSS_ENTITY_INDEX.md`** (fast path)
+   - If the cross-entity index exists, use it for the overview
+   - Entity Summary table gives phase, next deadline, status, and task count for every entity
+   - This replaces reading every individual roadmap
+2. **Fallback: Read all ROADMAP.md files**
+   - If the index doesn't exist, read `entities/*/ENTITY_ROADMAP.md` for each entity
+3. **Format multi-entity summary**
+   - Group by activity level or attention needed
+   - Highlight entities with overdue tasks or no recent updates
 
 ## Output Format (Single Entity)
 
@@ -136,7 +144,9 @@ Example: `/status Acme Corp`
 
 ## Related Files
 
-- Entity roadmap: `entities/[Name]/ENTITY_ROADMAP.md`
+- Cross-entity index: `.index/CROSS_ENTITY_INDEX.md` (fast overview for multi-entity queries)
+- Entity digests: `entities/[Name]/DIGEST.md` (fast summary for single-entity queries)
+- Entity roadmap: `entities/[Name]/ENTITY_ROADMAP.md` (full detail, deep-dive as needed)
 - Entity profile: `entities/[Name]/ENTITY_PROFILE.md`
 
 ---
